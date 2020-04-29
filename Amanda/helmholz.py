@@ -2,7 +2,7 @@ from ngsolve import *
 from netgen.geom2d import unit_square
 import numpy as np
 
-
+# Hi 
 #import matplotlib.pyplot as plt ## error if included
 
 def NormOfSolutions(parameters):
