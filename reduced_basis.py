@@ -220,13 +220,16 @@ class ReducedBasis:
         
         # compute reduced basis
         
-        ## TODO: not calcualte inverse every time!
+        ## TODO: can a updateable inverse used in that case?
         if self.robin:
-            Ainv = np.linalg.inv(self.K_red-omega*omega*self.M_red-1j*omega*self.R_red)
+            A = self.K_red-omega*omega*self.M_red-1j*omega*self.R_red
+#             Ainv = np.linalg.inv(self.K_red-omega*omega*self.M_red-1j*omega*self.R_red)
         else:
-            Ainv = np.linalg.inv(self.K_red-omega*omega*self.M_red)
+            A = self.K_red-omega*omega*self.M_red
+#             Ainv = np.linalg.inv(self.K_red-omega*omega*self.M_red)
 
-        red_sol_vec = Ainv.dot(self.F_red)
+#         red_sol_vec = Ainv.dot(self.F_red)
+        red_sol_vec = np.linalg.solve(A, self.F_red)
         
         v = Vector(red_sol_vec.tolist()) 
         
@@ -237,7 +240,6 @@ class ReducedBasis:
             self.scene = Draw(self.drawu)
         else:
             self.scene.Redraw()
-class ReducedBasis(ReducedBasis):
     
     def __computeResMat(self):
         
@@ -311,13 +313,17 @@ class ReducedBasis(ReducedBasis):
 
             for _omega in param:
                 
-                ## change to ngsolve operations (update inverse)
+                ## TODO: can a updateable inverse used in that case?
                 if self.robin:
-                    Ainv = np.linalg.inv(self.K_red-_omega*_omega*self.M_red-1j*_omega*self.R_red)
+                    A = self.K_red-_omega*_omega*self.M_red-1j*_omega*self.R_red
+        #             Ainv = np.linalg.inv(self.K_red-omega*omega*self.M_red-1j*omega*self.R_red)
                 else:
-                    Ainv = np.linalg.inv(self.K_red-_omega*_omega*self.M_red)
-                red_sol_vec = Vector(np.matmul(Ainv, self.F_red).tolist())
-                
+                    A = self.K_red-_omega*_omega*self.M_red
+        #             Ainv = np.linalg.inv(self.K_red-omega*omega*self.M_red)
+
+        #         red_sol_vec = Ainv.dot(self.F_red)
+                red_sol_vec = Vector(np.linalg.solve(A, self.F_red).tolist())
+            
                 
                 if norm:
 
