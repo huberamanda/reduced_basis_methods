@@ -101,7 +101,6 @@ class ReducedBasis:
         self.M_red = None
         self.F_red = None
         self.R_red = None
-        self.sol = []
         self.__V = None  # snapshot solutions
         self.__snapshots_updated = True
         self.__snapshots = [] # snapshot parameters
@@ -112,8 +111,10 @@ class ReducedBasis:
         
         # TODO: check that snapshots do not already exist
         if len(self.__snapshots) > 0 and not reset:
+            new_snapshots = np.unique(new_snapshots)
+            new_snapshots = new_snapshots[np.array([s not in self.__snapshots for s in new_snapshots])]
             if self.logging: print("append snapshots with {}".format(new_snapshots))
-            self.__snapshots = np.append(self.__snapshots, np.array(new_snapshots))
+            self.__snapshots = np.append(self.__snapshots, new_snapshots)
         else:
             if self.logging: print("set snapshots and reset basis")
             self.__snapshots = np.array(new_snapshots)
