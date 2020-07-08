@@ -138,11 +138,9 @@ class ReducedBasis:
 
     def getSnapshots(self):
         return self.__snapshots[self.__indices]
-    
-class ReducedBasis(ReducedBasis):
+        
     
     def __computeRB(self):
-
 
         if self.logging: print("compute Reduced Basis")
 
@@ -157,7 +155,7 @@ class ReducedBasis(ReducedBasis):
             npdtype = "complex"
             
         else:
-            npdtype = "float"
+            npdtype = 'float'
             
         V_tmp = np.zeros((dim_orig, dim_red), dtype=npdtype)
 
@@ -168,7 +166,7 @@ class ReducedBasis(ReducedBasis):
             ## TODO: implement Numpy interface instead of for loop
             for i in range(existing_basis_len):
                 V_tmp[:,i] = self.__V[i].FV().NumPy()
-#             V_tmp[:,0:existing_basis_len] = self.__V
+                
             self.__V.Expand(dim_red-existing_basis_len)
             if self.logging: print("extend reduced basis")
 
@@ -188,33 +186,17 @@ class ReducedBasis(ReducedBasis):
 
                 self.ainv.Update()
                 self.gfu.vec.data = self.ainv * self.f.vec
+                
+                self.__V[self.__indices[n]] = self.gfu.vec
 
-                V_tmp[:,n] = self.gfu.vec.FV().NumPy()        
-
-
-            if self.logging: print("Calculate QR_Decomposition")
-            dim = V_tmp.shape[1]
-            tmp = np.zeros(V_tmp.shape[0], dtype=npdtype)
-            tmp2 = np.zeros(V_tmp.shape[0], dtype=npdtype)
-            r = np.zeros([V_tmp.shape[1],V_tmp.shape[1]], dtype=npdtype)
-            for j in range(dim):
-                r[j,j] = np.linalg.norm(V_tmp[:,j])
-                tmp[:] = V_tmp[:,j]/r[j,j]
-                for k in range(j+1,dim):
-                    r[j,k] = np.vdot(tmp,V_tmp[:,k])
-                    tmp2[:] = V_tmp[:,k]-r[j,k]*tmp
-                    V_tmp[:,k] = tmp2/np.linalg.norm(tmp2)
+            self.__V.GramSchmidt()
             
-
-            # rearange V and snapshots due to the order of the snapshots
-            ## TODO: if Numpy interface working get rid of loop
-            for i in range(dim_red):
-                self.__V[i].FV().NumPy()[:] = V_tmp[:, self.__indices[i]]
-
             # set system in reduced basis space
             
              ## TODO: ngsolve instead of numpy
-            V_tmp = V_tmp[:, self.__indices]
+            for i in range(len(self.__V)):
+                V_tmp[:,i] = self.__V[i].FV().NumPy()
+                                
             self.K_red = np.transpose(V_tmp).dot(self.K_orig.dot(V_tmp))
             self.M_red = np.transpose(V_tmp).dot(self.M_orig.dot(V_tmp))
             self.F_red = np.transpose(V_tmp).dot(self.f.vec.data)
@@ -227,6 +209,7 @@ class ReducedBasis(ReducedBasis):
             self.__indices = range(dim_red)
             
             if self.logging: print("finished computing Reduced Basis")
+                
                 
                     
     def draw(self, omega, redraw=False):
