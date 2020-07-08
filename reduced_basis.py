@@ -192,21 +192,18 @@ class ReducedBasis(ReducedBasis):
                 V_tmp[:,n] = self.gfu.vec.FV().NumPy()        
 
 
-            # do QR-decomposition 
-            #q, r = np.linalg.qr(V_tmp)
-            #V_tmp = V_tmp.dot(np.linalg.inv(r))
             if self.logging: print("Calculate QR_Decomposition")
             dim = V_tmp.shape[1]
-            q = np.zeros([V_tmp.shape[0],V_tmp.shape[1]],dtype=npdtype)
-            r = np.zeros([V_tmp.shape[1],V_tmp.shape[1]],dtype=npdtype)
+            tmp = np.zeros(V_tmp.shape[0], dtype=npdtype)
+            tmp2 = np.zeros(V_tmp.shape[0], dtype=npdtype)
+            r = np.zeros([V_tmp.shape[1],V_tmp.shape[1]], dtype=npdtype)
             for j in range(dim):
                 r[j,j] = np.linalg.norm(V_tmp[:,j])
-                q[:,j] = V_tmp[:,j]/r[j,j]
-                #print(r[j,j])
+                tmp[:] = V_tmp[:,j]/r[j,j]
                 for k in range(j+1,dim):
-                    r[j,k] = np.vdot(q[:,j],V_tmp[:,k])
-                    tmp = V_tmp[:,k]-r[j,k]*q[:,j]
-                    V_tmp[:,k] = tmp
+                    r[j,k] = np.vdot(tmp,V_tmp[:,k])
+                    tmp2[:] = V_tmp[:,k]-r[j,k]*tmp
+                    V_tmp[:,k] = tmp2/np.linalg.norm(tmp2)
             
 
             # rearange V and snapshots due to the order of the snapshots
