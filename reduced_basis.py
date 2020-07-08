@@ -139,6 +139,8 @@ class ReducedBasis:
     def getSnapshots(self):
         return self.__snapshots[self.__indices]
     
+class ReducedBasis(ReducedBasis):
+    
     def __computeRB(self):
 
 
@@ -152,14 +154,18 @@ class ReducedBasis:
         dim_red = len(self.__snapshots)
 
         if self.robin:
-            V_tmp = np.zeros((dim_orig, dim_red), dtype=complex )
+            npdtype = "complex"
+            
         else:
-            V_tmp = np.zeros((dim_orig, dim_red))
+            npdtype = "float"
+            
+        V_tmp = np.zeros((dim_orig, dim_red), dtype=npdtype)
+
 
         # extend basis if it already exists
         try: 
             existing_basis_len = len(self.__V)
-            ## TODO: if Numpy interface working get rid of for loop
+            ## TODO: implement Numpy interface instead of for loop
             for i in range(existing_basis_len):
                 V_tmp[:,i] = self.__V[i].FV().NumPy()
 #             V_tmp[:,0:existing_basis_len] = self.__V
@@ -187,19 +193,30 @@ class ReducedBasis:
 
 
             # do QR-decomposition 
-            q, r = np.linalg.qr(V_tmp)
-            V_tmp = V_tmp.dot(np.linalg.inv(r))
+            #q, r = np.linalg.qr(V_tmp)
+            #V_tmp = V_tmp.dot(np.linalg.inv(r))
+            if self.logging: print("Calculate QR_Decomposition")
+            dim = V_tmp.shape[1]
+            q = np.zeros([V_tmp.shape[0],V_tmp.shape[1]],dtype=npdtype)
+            r = np.zeros([V_tmp.shape[1],V_tmp.shape[1]],dtype=npdtype)
+            for j in range(dim):
+                r[j,j] = np.linalg.norm(V_tmp[:,j])
+                q[:,j] = V_tmp[:,j]/r[j,j]
+                #print(r[j,j])
+                for k in range(j+1,dim):
+                    r[j,k] = np.vdot(q[:,j],V_tmp[:,k])
+                    tmp = V_tmp[:,k]-r[j,k]*q[:,j]
+                    V_tmp[:,k] = tmp
             
 
             # rearange V and snapshots due to the order of the snapshots
             ## TODO: if Numpy interface working get rid of loop
             for i in range(dim_red):
                 self.__V[i].FV().NumPy()[:] = V_tmp[:, self.__indices[i]]
-                
 
             # set system in reduced basis space
             
-             ## TODO: get rid of that if conversion to matrix implemented
+             ## TODO: ngsolve instead of numpy
             V_tmp = V_tmp[:, self.__indices]
             self.K_red = np.transpose(V_tmp).dot(self.K_orig.dot(V_tmp))
             self.M_red = np.transpose(V_tmp).dot(self.M_orig.dot(V_tmp))
@@ -213,6 +230,7 @@ class ReducedBasis:
             self.__indices = range(dim_red)
             
             if self.logging: print("finished computing Reduced Basis")
+                
                     
     def draw(self, omega, redraw=False):
         
