@@ -1,78 +1,51 @@
+from __future__ import print_function
+from ipywidgets import interact, interactive, fixed, interact_manual
+import ipywidgets as widgets
+
 from ngsolve import *
 from netgen.geom2d import unit_square
+
 
 import numpy as np
 import scipy
 import math
+import time
+import textwrap 
 
 from ngsolve.webgui import Draw
 
+np.random.seed(42)
+
 class ReducedBasis:
     
-    def __init__(self, fes, f, cfn = 1):
-        self.setSpace(fes, f, cfn)
-        self.logging = True
-    
-    def setSpace(self, fes, func, cfn = 1):
-        
+    def __init__(self, fes, blf, rhs, snap = None):
 
+        self.logging = True    
+        
         self.fes = fes
         
-        # assume robin bnd if fes is complex
-        if fes.is_complex:
-            self.robin = True
-        else:
-            self.robin = False
-        
-
         # set (bi-)linear forms and matrices
         self.omega = Parameter(0)
-                
-        ##########################################
-        ## TODO: implement the boundary thing in a better way
-        u,v =self.fes.TnT()
+        u,v = self.fes.TnT()
         self.a = BilinearForm(self.fes)
-        self.a += (grad(u)*grad(v) - self.omega*self.omega*cfn*cfn*u*v) * dx
-        # what happens per default if "robin" doesn't exist as boundary?
-        if self.robin:
-            if 'robin' in self.fes.mesh.GetBoundaries():
-                self.a += -1j*self.omega*u*v*ds (definedon=self.fes.mesh.Boundaries("robin"))
-            else:
-                self.a += -1j*self.omega*u*v*ds
+        keys = ['k', 'r', 'm']
+        for j in range(len(keys)):
+            if blf[j]:
+                self.a += eval('self.omega**j*'+blf[j])
+                exec(textwrap.dedent("""
+                self.{} = BilinearForm(self.fes)
+                self.{} += eval(blf[j])
+                self.{}.Assemble()
+                """.format(keys[j],keys[j],keys[j])))
+
         self.a.Assemble()
-        self.a.Assemble()
-        ##########################################
         
+        self.f = LinearForm(self.fes)
+        self.f += eval(rhs)
+        self.f.Assemble()
+                
         # store ainv for better performance
         self.ainv = self.a.mat.Inverse(self.fes.FreeDofs(), inverse="sparsecholesky")
-
-        self.f = LinearForm(self.fes)
-        self.f += func * v * dx
-        self.f.Assemble()
-         
-
-        self.k = BilinearForm(self.fes)
-        self.k += grad(u)*grad(v)*dx
-        self.k.Assemble()
-        rows,cols,vals = self.k.mat.COO()
-        self.K_orig = scipy.sparse.csr_matrix((vals,(rows,cols)))
-
-        self.m = BilinearForm(self.fes)
-        self.m += cfn*cfn*u*v * dx
-        self.m.Assemble()
-        rows,cols,vals = self.m.mat.COO()
-        self.M_orig = scipy.sparse.csr_matrix((vals,(rows,cols)))
-
-        if self.robin:
-            self.r = BilinearForm(self.fes)
-            if 'robin' in self.fes.mesh.GetBoundaries():
-                self.r += u*v*ds (definedon=self.fes.mesh.Boundaries("robin"))
-            else:
-                self.r += u*v*ds
-            self.r.Assemble()
-            rows,cols,vals = self.r.mat.COO()
-            self.R_orig = scipy.sparse.csr_matrix((vals,(rows,cols)))
-    
 
         # initialize grid functions
         self.gfu = GridFunction(self.fes)
@@ -84,217 +57,167 @@ class ReducedBasis:
         self.__gf_tmp = GridFunction(self.fes)
         
         
-        self.__proj = Projector(self.fes.FreeDofs(), True)
+        self.proj = Projector(self.fes.FreeDofs(), True)
 
         # compute norm of f
-        self.__bv_tmp.data = self.__proj*self.f.vec
+        self.__bv_tmp.data = self.proj*self.f.vec
         self.f.vec.data = self.__bv_tmp.data
-        self.normf = Norm(self.__bv_tmp)**2
+        self.__normf = Norm(self.__bv_tmp)**2
         
+        # initialize reduced matrices
+        self.k_red = None
+        self.m_red = None
+        self.r_red = None
+
+        try:
+            self.addSnapshots(snap)
+        except:
+            if self.logging: print("no snapshots given")
+            
+            
+
+    def addSnapshots(self, new_snapshots):
         
-        self.reset()
-
-    
-    def reset(self):
-        # reset dynamically updated parameters
-        self.K_red = None
-        self.M_red = None
-        self.F_red = None
-        self.R_red = None
-        self.__V = None  # snapshot solutions
-        self.__snapshots_updated = True
-        self.__snapshots = [] # snapshot parameters
-        self.__indices = []
-
-
-    def setSnapshots(self, new_snapshots, reset = True, compute_RB = True):
-        
-        # TODO: check that snapshots do not already exist
-        if len(self.__snapshots) > 0 and not reset:
+        # set snapshots and check that they do not already exist
+        try:
             new_snapshots = np.unique(new_snapshots)
             new_snapshots = new_snapshots[np.array([s not in self.__snapshots for s in new_snapshots])]
             if self.logging: print("append snapshots with {}".format(new_snapshots))
             self.__snapshots = np.append(self.__snapshots, new_snapshots)
-        else:
+            
+        except:
             if self.logging: print("set snapshots and reset basis")
             self.__snapshots = np.array(new_snapshots)
-            self.__V = None
-
-        self.__snapshots_updated = True
-        self.__update_res_mat = True
+            self.V = None
 
         # store smallest and biggest snapshot parameter
         self.omega_min = min(self.__snapshots)
         self.omega_max = max(self.__snapshots)
-
-        # store indices of snapshots in ascending order
-        tmp = self.__snapshots
-        zip_to_sort = list(zip(tmp, range(len(tmp))))
-        sorted_zip = sorted(zip_to_sort, key=lambda x: x[0], reverse=False)
-        self.__indices = [tup[1] for tup in sorted_zip]
-
-        if compute_RB:
-            self.__computeRB()
-
-    def getSnapshots(self):
-        return self.__snapshots[self.__indices]
         
-    
-    def __computeRB(self):
-
+        # compute reduced basis
+        
         if self.logging: print("compute Reduced Basis")
-
-        if len(self.__snapshots) == 0:
-            if self.logging: print(""" no snapshots given, please call 'instance.setSnapshots' first""")
-            return
-        
-        dim_orig = len(self.gfu.vec)
-        dim_red = len(self.__snapshots)
-
-        if self.robin:
-            npdtype = "complex"
-            
-        else:
-            npdtype = 'float'
-            
-        V_tmp = np.zeros((dim_orig, dim_red), dtype=npdtype)
-
 
         # extend basis if it already exists
         try: 
-            existing_basis_len = len(self.__V)
-            ## TODO: implement Numpy interface instead of for loop
-            for i in range(existing_basis_len):
-                V_tmp[:,i] = self.__V[i].FV().NumPy()
-                
-            self.__V.Expand(dim_red-existing_basis_len)
+            existing_basis_len = len(self.V)
             if self.logging: print("extend reduced basis")
-
         except:
             existing_basis_len = 0
-            self.__V = MultiVector(self.__bv_tmp, dim_red)
-
 
         with TaskManager():
 
-            for n in range(0+existing_basis_len, dim_red):
-                _omega = self.__snapshots[n]
+            for n in range(0+existing_basis_len, len(self.__snapshots)):
+                omega = self.__snapshots[n]
                 
-                # compute FEM solution for parameter _omega
-                self.omega.Set(_omega)
+                # compute FEM solution for parameter omega
+                self.omega.Set(omega)
                 self.a.Assemble()
 
                 self.ainv.Update()
                 self.gfu.vec.data = self.ainv * self.f.vec
                 
-                self.__V[self.__indices[n]] = self.gfu.vec
-
-            self.__V.GramSchmidt()
+                try:
+                    self.V.Append(self.gfu.vec)
+                except:
+                    self.V = MultiVector(self.gfu.vec, 1)
+                    self.V[0] = self.gfu.vec
+                    
+                ## TODO: AppendOrthogonalize in multivec
+                
+            # orthognalize
+            self.V.Orthogonalize()
+        
+            # compute matrices in reduced space
+            mv = MultiVector(self.gfu.vec, len(self.__snapshots))
             
-            # set system in reduced basis space
+            self.not_zero = []
+            for key in ['k', 'r', 'm']:
+                try:
+                    mv[0:len(self.__snapshots)] = eval('self.{}.mat * self.V'.format(key))
+                    exec('self.{}_red = InnerProduct(self.V, mv)'.format(key))
+                    self.not_zero += [key]
+                except:
+                    exec('self.{}_red = Matrix(len(self.V), len(self.V), self.fes.is_complex)'.format(key))
+                    exec('self.{}_red[:] = 0'.format(key))
+
+            mv = MultiVector(self.f.vec, 1)
+            mv[0] = self.f.vec
+            self.f_red = InnerProduct(self.V, mv)
             
-             ## TODO: ngsolve instead of numpy
-            for i in range(len(self.__V)):
-                V_tmp[:,i] = self.__V[i].FV().NumPy()
-                                
-            self.K_red = np.transpose(V_tmp).dot(self.K_orig.dot(V_tmp))
-            self.M_red = np.transpose(V_tmp).dot(self.M_orig.dot(V_tmp))
-            self.F_red = np.transpose(V_tmp).dot(self.f.vec.data)
-
-            if self.robin:
-                self.R_red = np.transpose(V_tmp).dot(self.R_orig.dot(V_tmp))
-
-            self.__snapshots_updated = False
-            self.__snapshots = self.__snapshots[self.__indices]
-            self.__indices = range(dim_red)
             
             if self.logging: print("finished computing Reduced Basis")
-                
-                
-                    
+        
+        
+            dim = eval('(self.{}_red.h, self.{}_red.w)'.format(
+                self.not_zero[0], self.not_zero[0]))
+            bv_tmp = self.__bv_tmp # needed to be able to use exec(''' .. ''')
+            tmp = MultiVector(self.__bv_tmp, dim[0])
+            keys = []
+
+            for i in range(len(self.not_zero)):
+                # set multivectors
+                exec(textwrap.dedent('''
+                {}_zeta = MultiVector(bv_tmp, dim[0])
+                tmp.data = self.{}.mat * self.V
+                {}_zeta.data = self.proj * tmp
+                '''.format(self.not_zero[i], self.not_zero[i], self.not_zero[i])))
+                # set keys
+                for k in range(i, len(self.not_zero)):
+                    keys += [self.not_zero[i]+self.not_zero[k]]
+
+            self.__res_mat = {} # available keys: 'kk','kr','km','rr','rm','mm'
+
+            # calculate scalar products
+            for key in keys:
+                self.__res_mat[key] = eval(
+                    "InnerProduct ({}_zeta, {}_zeta, conjugate=False)".format(list(key)[0], list(key)[1]))
+                # calculate inner products with right hand side
+                if list(key)[0] == list(key)[1]:
+                    self.__res_mat['{}f'.format(list(key)[0])] = Vector(dim[0], 
+                                                            self.fes.is_complex)
+                    for j in range(dim[0]): 
+                        self.__res_mat['{}f'.format(list(key)[0])][j] = eval(
+                            "InnerProduct ({}_zeta[{}], self.f.vec.data, conjugate=False)".format(list(key)[0], j))
+
+            # set other matrices to zero
+            for key in ['kk', 'kr', 'km', 'rr', 'rm', 'mm']:
+                if key not in keys:
+                    self.__res_mat[key] = Matrix(dim[0], dim[1], 
+                                                 self.fes.is_complex)
+                    self.__res_mat[key][:] = 0
+
+            for key in ['k', 'r', 'm']:
+                if key not in self.not_zero:
+                    self.__res_mat['{}f'.format(key)] = Vector(dim[0],
+                                                 self.fes.is_complex)
+                    self.__res_mat['{}f'.format(key)][:] = 0
+
+    def getSnapshots(self):
+        return self.__snapshots
+    
+    
     def draw(self, omega, redraw=False):
         
-        if self.__snapshots_updated:
-            self.__computeRB()
-        
-        # compute reduced basis
-        
-        ## TODO: can a updateable inverse used in that case?
-        if self.robin:
-            A = self.K_red-omega*omega*self.M_red-1j*omega*self.R_red
-#             Ainv = np.linalg.inv(self.K_red-omega*omega*self.M_red-1j*omega*self.R_red)
-        else:
-            A = self.K_red-omega*omega*self.M_red
-#             Ainv = np.linalg.inv(self.K_red-omega*omega*self.M_red)
+        # compute reduced solution
 
-#         red_sol_vec = Ainv.dot(self.F_red)
-        red_sol_vec = np.linalg.solve(A, self.F_red)
+        ## TODO: updatable a_red.inv (Base Matrix instead of bla-Matrix?) and omega as parameter
+        A = self.k_red+self.m_red*omega*omega+self.r_red*omega
+        v = A.I * self.f_red
         
-        v = Vector(red_sol_vec.tolist()) 
+        self.drawu.vec.data = self.V * v[:,0]
         
-        self.drawu.vec.data = self.__V * v
-        if self.logging: print("omega: {}, norm of solution: {}".format(omega, Integrate ( Conj(self.drawu)*(self.drawu), self.fes.mesh)))
+        if self.logging: print("omega: {}, norm of solution: {}".format(omega, 
+            np.real(Integrate ( Conj(self.drawu)*(self.drawu), self.fes.mesh))))
+        
         # draw solution
         if not redraw:
             self.scene = Draw(self.drawu)
         else:
             self.scene.Redraw()
-    
-    def __computeResMat(self):
-        
-        self.__update_res_mat = False
-        dim = self.K_red.shape
-        
+            
 
-        k_zeta = MultiVector(self.__bv_tmp, dim[0])
-        m_zeta = MultiVector(self.__bv_tmp, dim[0])
-        tmp = MultiVector(self.__bv_tmp, dim[0])
-        
-        # enforce dirichlet boundaries
-        tmp.data = self.k.mat * self.__V
-        k_zeta.data = self.__proj * tmp
-        
-        tmp.data = self.m.mat * self.__V
-        m_zeta.data = self.__proj * tmp
-        
-        
-        keys = ['kk', 'mm', 'mk']
-        
-        
-        if self.robin:
-            r_zeta = MultiVector(self.__bv_tmp, dim[0])
-            tmp.data = self.r.mat * self.__V
-            r_zeta.data = self.__proj * tmp
-
-            keys += ['rr', 'rm', 'rk']
-
-
-        self.__res_mat = {} # kk, mm, km, rr, rm, rk
-        
-        for key in keys:
-            self.__res_mat[key] = Matrix(dim[0], dim[1], self.robin)
-
-            if list(key)[0] == list(key)[1]:
-                self.__res_mat['{}f'.format(list(key)[0])] = Vector(dim[0], self.robin)
-        
-        
-        # calculate scalar products
-        for key in keys:
-            self.__res_mat[key] = eval(
-                "InnerProduct ({}_zeta, {}_zeta)".format(list(key)[0], list(key)[1]))
-            # f
-            if list(key)[0] == list(key)[1]:
-                for j in range(dim[0]): 
-                    self.__res_mat['{}f'.format(list(key)[0])][j] = eval(
-                        "InnerProduct ({}_zeta[{}], self.f.vec.data)".format(list(key)[0], j))
-    
     def computeValues(self, param, residual=True, norm=True, cheap = True):
-        
-        ret_val = []
-
-        if self.__snapshots_updated:
-            self.__computeRB()
-        
         
         if residual and norm: 
             if self.logging: print("compute residual and norm")
@@ -306,28 +229,19 @@ class ReducedBasis:
         
         norm_ret = []
         residual_ret = []
-
         
         with TaskManager():
 
-            for _omega in param:
-                
-                ## TODO: can a updateable inverse used in that case?
-                if self.robin:
-                    A = self.K_red-_omega*_omega*self.M_red-1j*_omega*self.R_red
-        #             Ainv = np.linalg.inv(self.K_red-omega*omega*self.M_red-1j*omega*self.R_red)
-                else:
-                    A = self.K_red-_omega*_omega*self.M_red
-        #             Ainv = np.linalg.inv(self.K_red-omega*omega*self.M_red)
+            for omega in param:
 
-        #         red_sol_vec = Ainv.dot(self.F_red)
-                red_sol_vec = Vector(np.linalg.solve(A, self.F_red).tolist())
+                # compute reduced solution
+                A = self.k_red+self.m_red*omega*omega+self.r_red*omega
+                v = A.I * self.f_red
+                red_sol_vec = v[:,0]
             
-                
                 if norm:
 
-                    self.__gf_tmp.vec.data = self.__V * red_sol_vec
-
+                    self.__gf_tmp.vec.data = self.V * red_sol_vec
                     # imaginary part is not exactly 0 due to numerical errors
                     nof = np.real(Integrate(self.__gf_tmp*Conj(self.__gf_tmp), self.fes.mesh))
                     norm_ret += [nof]
@@ -335,35 +249,29 @@ class ReducedBasis:
                 if residual:   
                     
                     if cheap:
-                        if self.__update_res_mat:
-                            self.__computeResMat()
-                        ## TODO: wrapper for ".C" for real matrices?
-                        if self.robin:
-                            A = (self.__res_mat['kk']-(self.__res_mat['mk']+
-                                self.__res_mat['mk'].C)*_omega**2+ self.__res_mat['mm']*_omega**4)
-                        else:
-                            A = (self.__res_mat['kk']- self.__res_mat['mk']*_omega**2*2+self.__res_mat['mm']*_omega**4)
                             
-                        A_F = self.__res_mat['kf']-self.__res_mat['mf']*_omega**2
-        
-                        if self.robin:
-                            A += ((self.__res_mat['rk']+self.__res_mat['rk'].C)*-1j*_omega
-                                 + (self.__res_mat['rm']+self.__res_mat['rm'].C) * 1j*_omega**3
-                                 + self.__res_mat['rr'] * 1j*_omega**2)
-                            A_F -= self.__res_mat['rf'] * 1j*_omega
+                        A = (self.__res_mat['kk']
+                             + self.__res_mat['km']*2*omega**2
+                             + self.__res_mat['mm']*omega**4 
+                             + self.__res_mat['kr']*2*omega
+                             + self.__res_mat['rm']*2*omega**3
+                             + self.__res_mat['rr'] *omega**2)
                             
-                        res = InnerProduct(red_sol_vec, A * red_sol_vec) - 2*np.real( InnerProduct(red_sol_vec, A_F)) + self.normf
+                        A_F = self.__res_mat['kf']+self.__res_mat['mf']*omega**2+self.__res_mat['rf'] *omega
+      
+                        res = (InnerProduct(red_sol_vec, A * red_sol_vec) 
+                               - 2*np.real( InnerProduct(red_sol_vec, A_F)) 
+                               + self.__normf)
+                        
                         residual_ret += [abs(res)]
 
                     else:
-                        if not norm: self.__gf_tmp.vec.data = self.__V * red_sol_vec
-                    
-                        self.__bv_tmp.data = self.k.mat*self.__gf_tmp.vec - _omega*_omega*self.m.mat*self.__gf_tmp.vec - self.f.vec
                         
-                        if self.robin:
-                            self.__bv_tmp.data += -1j*_omega*self.r.mat*self.__gf_tmp.vec
-
-                        self.__bv_tmp2.data = self.__proj*self.__bv_tmp
+                        if not norm: self.__gf_tmp.vec.data = self.V * red_sol_vec
+                        self.omega.Set(omega)
+                        self.a.Assemble()
+                        self.__bv_tmp.data = self.a.mat*self.__gf_tmp.vec - self.f.vec
+                        self.__bv_tmp2.data = self.proj*self.__bv_tmp
                         res = Norm(self.__bv_tmp2)**2
                     
                         residual_ret += [res]
