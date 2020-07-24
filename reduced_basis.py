@@ -26,22 +26,22 @@ class ReducedBasis:
         
         # set (bi-)linear forms and matrices
         self.omega = Parameter(0)
-        u,v = self.fes.TnT()
         self.a = BilinearForm(self.fes)
         keys = ['k', 'r', 'm']
         for j in range(len(keys)):
             if blf[j]:
-                self.a += eval('self.omega**j*'+blf[j])
+                self.a += self.omega**j*blf[j][0].coef * blf[j][0].symbol
                 exec(textwrap.dedent("""
                 self.{} = BilinearForm(self.fes)
-                self.{} += eval(blf[j])
+                self.{} += blf[j]
                 self.{}.Assemble()
                 """.format(keys[j],keys[j],keys[j])))
+                key_tmp = keys[j]
 
         self.a.Assemble()
         
         self.f = LinearForm(self.fes)
-        self.f += eval(rhs)
+        self.f += rhs
         self.f.Assemble()
                 
         # store ainv for better performance
@@ -52,8 +52,8 @@ class ReducedBasis:
         self.drawu = GridFunction(self.fes)
 
         # temporary ngsolve vectors
-        self.__bv_tmp = self.k.mat.CreateColVector()
-        self.__bv_tmp2 = self.k.mat.CreateColVector()
+        self.__bv_tmp = eval('self.{}.mat.CreateColVector()'.format(key_tmp))
+        self.__bv_tmp2 = eval('self.{}.mat.CreateColVector()'.format(key_tmp))
         self.__gf_tmp = GridFunction(self.fes)
         
         
@@ -118,16 +118,11 @@ class ReducedBasis:
                 self.gfu.vec.data = self.ainv * self.f.vec
                 
                 try:
-                    self.V.Append(self.gfu.vec)
+                    self.V.AppendOrthogonalize(self.gfu.vec)
                 except:
                     self.V = MultiVector(self.gfu.vec, 1)
                     self.V[0] = self.gfu.vec
                     
-                ## TODO: AppendOrthogonalize in multivec
-                
-            # orthognalize
-            self.V.Orthogonalize()
-        
             # compute matrices in reduced space
             mv = MultiVector(self.gfu.vec, len(self.__snapshots))
             
