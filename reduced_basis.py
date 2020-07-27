@@ -30,11 +30,8 @@ class ReducedBasis:
         self.a = BilinearForm(self.fes)
         for j in range(3):
             if blf[j]:
-                self.a += self.omega**j*blf[j][0].coef * blf[j][0].symbol
-                self.bfs[j] = BilinearForm(self.fes)
-                self.bfs[j] += blf[j]
-                self.bfs[j].Assemble()
-
+                self.a += sum([self.omega**j*igl.coef * igl.symbol for igl in blf[j]])
+                self.bfs[j] = BilinearForm(blf[j]).Assemble()
         self.a.Assemble()
         
         self.f = LinearForm(self.fes)
