@@ -114,7 +114,7 @@ class ReducedBasis:
     def getSnapshots(self):
         return self.__snapshots
     
-    def draw(self, omega, redraw=False):
+    def draw(self, omega,minval = -0.0001,maxval = 0.0001, autoscale = True,redraw=False):
         
         # compute reduced solution
 
@@ -133,7 +133,7 @@ class ReducedBasis:
         
         # draw solution
         if not redraw:
-            self.scene = Draw(self.drawu)
+            self.scene = Draw(self.drawu,min = minval, max = maxval,autoscale = autoscale)
         else:
             self.scene.Redraw()
 
