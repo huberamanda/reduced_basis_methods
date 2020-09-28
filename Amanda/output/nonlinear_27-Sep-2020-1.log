@@ -1,0 +1,507 @@
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+dt = 60
+eval point = 0.05
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+dt = 60
+eval point = 0.05
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+dt = 60
+eval point = 0.05
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root: error 230.92245877447735 in newton iteration 1
+INFO:root: error 2.8444127945739566 in newton iteration 2
+INFO:root: error 0.040578904378413175 in newton iteration 3
+INFO:root: error 0.008163156963515062 in newton iteration 4
+INFO:root: error 0.002377284114167129 in newton iteration 5
+INFO:root: error 7.208628424390824e-05 in newton iteration 6
+INFO:root: error 7.733187177612029e-07 in newton iteration 7
+INFO:root: error 1.1768383166619446e-12 in newton iteration 8
+INFO:root:B(0.0): (0.0012069127674624372, -0.03088868838607537, -0.018167641994389902)
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root: error 1.3555800593351395 in newton iteration 1
+INFO:root: error 0.00010180808644219376 in newton iteration 2
+INFO:root: error 1.8087965707815181e-06 in newton iteration 3
+INFO:root: error 5.388881784238978e-08 in newton iteration 4
+INFO:root: error 6.702519639722348e-16 in newton iteration 5
+INFO:root:B(0.05): (0.0009997003381828178, -0.023013786368600814, -0.015011699016971806)
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root: error 0.19152571799717522 in newton iteration 1
+INFO:root: error 0.00017730465515086328 in newton iteration 2
+INFO:root: error 4.515599791685127e-07 in newton iteration 3
+INFO:root: error 1.0420672608030066e-11 in newton iteration 4
+INFO:root:B(0.1): (0.0009914458813799678, -0.01417996158199107, -0.013500435240161776)
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root: error 0.20702631773279523 in newton iteration 1
+INFO:root: error 8.766031193493853e-05 in newton iteration 2
+INFO:root: error 3.7670071648957573e-08 in newton iteration 3
+INFO:root: error 2.808612815509967e-13 in newton iteration 4
+INFO:root:B(0.15000000000000002): (0.0010646053309932495, -0.008622722615115002, -0.01443001191239185)
+INFO:root:
+Implicit Euler Iteration: 4
+
+INFO:root: error 0.2167111319027236 in newton iteration 1
+INFO:root: error 3.676498839749295e-05 in newton iteration 2
+INFO:root: error 8.067432246433282e-09 in newton iteration 3
+INFO:root:B(0.2): (0.0011202065244436741, -0.005392870426647315, -0.016568196627719883)
+INFO:root:
+Implicit Euler Iteration: 5
+
+INFO:root: error 0.22296739108844818 in newton iteration 1
+INFO:root: error 1.5905833575577156e-05 in newton iteration 2
+INFO:root: error 2.7503994726857904e-09 in newton iteration 3
+INFO:root:B(0.25): (0.0010419424713931208, -0.0034648618818916206, -0.018991758533304922)
+INFO:root:
+Implicit Euler Iteration: 6
+
+INFO:root: error 0.23069796885576882 in newton iteration 1
+INFO:root: error 1.093687287440222e-05 in newton iteration 2
+INFO:root: error 1.0952570569955153e-09 in newton iteration 3
+INFO:root:B(0.30000000000000004): (0.0008364716080288297, -0.0022842645744522525, -0.021553102866956015)
+INFO:root:
+Implicit Euler Iteration: 7
+
+INFO:root: error 0.23981219631548323 in newton iteration 1
+INFO:root: error 8.585601398762904e-06 in newton iteration 2
+INFO:root: error 2.7005724285837747e-09 in newton iteration 3
+INFO:root:B(0.35000000000000003): (0.0005750468085954557, -0.001619572090386286, -0.024340980628617823)
+INFO:root:
+Implicit Euler Iteration: 8
+
+INFO:root: error 0.24978784278112337 in newton iteration 1
+INFO:root: error 6.960347080290376e-06 in newton iteration 2
+INFO:root: error 7.509886755451148e-10 in newton iteration 3
+INFO:root:B(0.4): (0.00022327410352119753, -0.0012600022898850015, -0.027296481073791984)
+INFO:root:
+Implicit Euler Iteration: 9
+
+INFO:root: error 0.2602209131187883 in newton iteration 1
+INFO:root: error 5.189020447510486e-06 in newton iteration 2
+INFO:root: error 3.419490200073056e-10 in newton iteration 3
+INFO:root:B(0.45): (-0.00016797083646572834, -0.0010830467300959904, -0.03033059894268025)
+INFO:root:
+Implicit Euler Iteration: 10
+
+INFO:root: error 0.27084156309786334 in newton iteration 1
+INFO:root: error 5.671968783472329e-06 in newton iteration 2
+INFO:root: error 5.974050058942736e-10 in newton iteration 3
+INFO:root:B(0.5): (-0.0005427155383956993, -0.0009907531156724428, -0.0333541458771666)
+INFO:root:
+Implicit Euler Iteration: 11
+
+INFO:root: error 0.28143190541661545 in newton iteration 1
+INFO:root: error 6.9323211561217345e-06 in newton iteration 2
+INFO:root: error 7.743924607360177e-09 in newton iteration 3
+INFO:root:B(0.55): (-0.0008903612087453299, -0.0008987299576246579, -0.03624815645255691)
+INFO:root:
+Implicit Euler Iteration: 12
+
+INFO:root: error 0.2919131764524241 in newton iteration 1
+INFO:root: error 6.584305862635687e-06 in newton iteration 2
+INFO:root: error 5.613965850891281e-09 in newton iteration 3
+INFO:root:B(0.6000000000000001): (-0.001185635426837733, -0.0007659326104869357, -0.0389438469328139)
+INFO:root:
+Implicit Euler Iteration: 13
+
+INFO:root: error 0.3022085850194269 in newton iteration 1
+INFO:root: error 7.235152197054716e-06 in newton iteration 2
+INFO:root: error 5.83546694070453e-10 in newton iteration 3
+INFO:root:B(0.65): (-0.0014242207599670946, -0.0006068875752181918, -0.0414304561709082)
+INFO:root:
+Implicit Euler Iteration: 14
+
+INFO:root: error 0.31219647756109914 in newton iteration 1
+INFO:root: error 7.621729441628834e-06 in newton iteration 2
+INFO:root: error 1.4217909750785543e-09 in newton iteration 3
+INFO:root:B(0.7000000000000001): (-0.0015983596919992911, -0.00036659166702532206, -0.04363976592264339)
+INFO:root:
+Implicit Euler Iteration: 15
+
+INFO:root: error 0.3217979313022515 in newton iteration 1
+INFO:root: error 1.0937009430059746e-05 in newton iteration 2
+INFO:root: error 1.326211450049867e-09 in newton iteration 3
+INFO:root:B(0.75): (-0.0017025544813500135, -7.859540494451552e-05, -0.045621701496186086)
+INFO:root:
+Implicit Euler Iteration: 16
+
+INFO:root: error 0.33092372746350673 in newton iteration 1
+INFO:root: error 1.5246199686729943e-05 in newton iteration 2
+INFO:root: error 1.7647445840969203e-08 in newton iteration 3
+INFO:root: error 1.0541385844711468e-13 in newton iteration 4
+INFO:root:B(0.8): (-0.0017573249492293585, 0.00017384510541792873, -0.04747872364836253)
+INFO:root:
+Implicit Euler Iteration: 17
+
+INFO:root: error 0.33949438883497873 in newton iteration 1
+INFO:root: error 2.118071019669641e-05 in newton iteration 2
+INFO:root: error 9.530546154644453e-09 in newton iteration 3
+INFO:root:B(0.8500000000000001): (-0.0016931728142315521, 0.00039284166797407655, -0.04913655909203836)
+INFO:root:
+Implicit Euler Iteration: 18
+
+INFO:root: error 0.34745083361777357 in newton iteration 1
+INFO:root: error 2.6723476292700356e-05 in newton iteration 2
+INFO:root: error 1.0527164637168023e-08 in newton iteration 3
+INFO:root: error 3.079740726716701e-14 in newton iteration 4
+INFO:root:B(0.9): (-0.0015604561406259378, 0.000586432553478687, -0.05057190139231749)
+INFO:root:
+Implicit Euler Iteration: 19
+
+INFO:root: error 0.35475675739668433 in newton iteration 1
+INFO:root: error 3.8063975474834336e-05 in newton iteration 2
+INFO:root: error 1.0396279294827538e-08 in newton iteration 3
+INFO:root: error 7.152079848828225e-14 in newton iteration 4
+INFO:root:B(0.9500000000000001): (-0.0014010052602855096, 0.0007432531955979935, -0.05182414383297995)
+INFO:root:
+Implicit Euler Iteration: 20
+
+INFO:root: error 0.3613914672706565 in newton iteration 1
+INFO:root: error 5.733222173048569e-05 in newton iteration 2
+INFO:root: error 2.5531597134520837e-08 in newton iteration 3
+INFO:root: error 6.773522196603166e-14 in newton iteration 4
+INFO:root:B(1.0): (0.0012069127674624372, -0.03088868838607537, -0.018167641994389902)
+B(1.0-1): (-0.0012667778490595793, 0.0008734298130340024, -0.05285926097488894)
+INFO:root:
+Implicit Euler Iteration: 21
+
+INFO:root: error 0.3671984512074469 in newton iteration 1
+INFO:root: error 6.156087193336118e-05 in newton iteration 2
+INFO:root: error 1.134002850231764e-08 in newton iteration 3
+INFO:root: error 1.0200617004967654e-14 in newton iteration 4
+INFO:root:B(1.05): (0.0009997003381828178, -0.023013786368600814, -0.015011699016971806)
+B(1.05-1): (-0.0011749866455833405, 0.0009640109829349276, -0.05367681652361257)
+INFO:root:
+Implicit Euler Iteration: 22
+
+INFO:root: error 0.3727491470174754 in newton iteration 1
+INFO:root: error 6.429057034604492e-05 in newton iteration 2
+INFO:root: error 8.970158632893746e-09 in newton iteration 3
+INFO:root:B(1.1): (0.0009914458813799678, -0.01417996158199107, -0.013500435240161776)
+B(1.1-1): (-0.001132045907615863, 0.0010082437851061407, -0.054240135794275925)
+INFO:root:
+Implicit Euler Iteration: 23
+
+INFO:root: error 0.378299084934112 in newton iteration 1
+INFO:root: error 5.709954581266118e-05 in newton iteration 2
+INFO:root: error 7.816100029716334e-09 in newton iteration 3
+INFO:root:B(1.1500000000000001): (0.0010646053309932495, -0.008622722615115002, -0.01443001191239185)
+B(1.1500000000000001-1): (-0.0011356693583199798, 0.0010077302491156607, -0.054525465072684264)
+INFO:root:
+Implicit Euler Iteration: 24
+
+INFO:root: error 0.3844864736777869 in newton iteration 1
+INFO:root: error 4.180058781055411e-05 in newton iteration 2
+INFO:root: error 3.5643099786525844e-09 in newton iteration 3
+INFO:root:B(1.2000000000000002): (0.0011202065244436741, -0.005392870426647315, -0.016568196627719883)
+B(1.2000000000000002-1): (-0.0011840311873147875, 0.0009655938434732122, -0.05450743810699198)
+INFO:root:
+Implicit Euler Iteration: 25
+
+INFO:root: error 0.3914113450823851 in newton iteration 1
+INFO:root: error 4.30814586894244e-05 in newton iteration 2
+INFO:root: error 4.554590324597897e-09 in newton iteration 3
+INFO:root:B(1.25): (0.0010419424713931208, -0.0034648618818916206, -0.018991758533304922)
+B(1.25-1): (-0.0012871602226715382, 0.0009013454741536291, -0.05414798767772952)
+INFO:root:
+Implicit Euler Iteration: 26
+
+INFO:root: error 0.39807865496277356 in newton iteration 1
+INFO:root: error 3.117768974439667e-05 in newton iteration 2
+INFO:root: error 1.4780750757858137e-09 in newton iteration 3
+INFO:root:B(1.3): (0.0008364716080288297, -0.0022842645744522525, -0.021553102866956015)
+B(1.3-1): (-0.0014272629313493268, 0.0008384182659094624, -0.05337982934417083)
+INFO:root:
+Implicit Euler Iteration: 27
+
+INFO:root: error 0.40372565427751445 in newton iteration 1
+INFO:root: error 1.720365905430314e-05 in newton iteration 2
+INFO:root: error 9.956663840189949e-10 in newton iteration 3
+INFO:root:B(1.35): (0.0005750468085954557, -0.001619572090386286, -0.024340980628617823)
+B(1.35-1): (-0.00155303167949846, 0.0007883211986358638, -0.052164785611422515)
+INFO:root:
+Implicit Euler Iteration: 28
+
+INFO:root: error 0.4080600877272908 in newton iteration 1
+INFO:root: error 1.0389020244003578e-05 in newton iteration 2
+INFO:root: error 2.3333838899658495e-10 in newton iteration 3
+INFO:root:B(1.4000000000000001): (0.00022327410352119753, -0.0012600022898850015, -0.027296481073791984)
+B(1.4000000000000001-1): (-0.0016345209513787713, 0.0007785924266308728, -0.050478293541302656)
+INFO:root:
+Implicit Euler Iteration: 29
+
+INFO:root: error 0.41120444739229567 in newton iteration 1
+INFO:root: error 7.080309389232306e-06 in newton iteration 2
+INFO:root: error 7.397187163716056e-11 in newton iteration 3
+INFO:root:B(1.4500000000000002): (-0.00016797083646572834, -0.0010830467300959904, -0.03033059894268025)
+B(1.4500000000000002-1): (-0.0016487926774979276, 0.0008177523004803496, -0.04833454237250749)
+INFO:root:
+Implicit Euler Iteration: 30
+
+INFO:root: error 0.4133645441043041 in newton iteration 1
+INFO:root: error 5.879684357969046e-06 in newton iteration 2
+INFO:root: error 4.6123865164436475e-11 in newton iteration 3
+INFO:root:B(1.5): (-0.0005427155383956993, -0.0009907531156724428, -0.0333541458771666)
+B(1.5-1): (-0.0015620777051932964, 0.0008859266046943092, -0.0458040803963055)
+INFO:root:
+Implicit Euler Iteration: 31
+
+INFO:root: error 0.4144801855234183 in newton iteration 1
+INFO:root: error 2.6916758861497054e-06 in newton iteration 2
+INFO:root: error 1.0812735011569938e-11 in newton iteration 3
+INFO:root:B(1.55): (-0.0008903612087453299, -0.0008987299576246579, -0.03624815645255691)
+B(1.55-1): (-0.0013951479702732329, 0.0009718273840329583, -0.04294276571363963)
+INFO:root:
+Implicit Euler Iteration: 32
+
+INFO:root: error 0.41445377644897574 in newton iteration 1
+INFO:root: error 1.320478797545191e-06 in newton iteration 2
+INFO:root: error 4.737625714643257e-12 in newton iteration 3
+INFO:root:B(1.6): (-0.001185635426837733, -0.0007659326104869357, -0.0389438469328139)
+B(1.6-1): (-0.001135593842338527, 0.0011494366991866354, -0.0396936140322176)
+INFO:root:
+Implicit Euler Iteration: 33
+
+INFO:root: error 0.41345113399276323 in newton iteration 1
+INFO:root: error 7.036141194159814e-07 in newton iteration 2
+INFO:root: error 5.21569725401998e-13 in newton iteration 3
+INFO:root:B(1.6500000000000001): (-0.0014242207599670946, -0.0006068875752181918, -0.0414304561709082)
+B(1.6500000000000001-1): (-0.0008287424770495127, 0.0013875836001516265, -0.0362158115610688)
+INFO:root:
+Implicit Euler Iteration: 34
+
+INFO:root: error 0.41158538276993245 in newton iteration 1
+INFO:root: error 4.7069062754822766e-07 in newton iteration 2
+INFO:root: error 3.686252145232655e-13 in newton iteration 3
+INFO:root:B(1.7000000000000002): (-0.0015983596919992911, -0.00036659166702532206, -0.04363976592264339)
+B(1.7000000000000002-1): (-0.00048611581937565507, 0.0017341158796221545, -0.03250249461097362)
+INFO:root:
+Implicit Euler Iteration: 35
+
+INFO:root: error 0.4088974826179901 in newton iteration 1
+INFO:root: error 3.4258411962119925e-07 in newton iteration 2
+INFO:root: error 7.531578048997518e-13 in newton iteration 3
+INFO:root:B(1.75): (-0.0017025544813500135, -7.859540494451552e-05, -0.045621701496186086)
+B(1.75-1): (-0.00016461216460989954, 0.0021325368428729667, -0.028683625879362146)
+INFO:root:
+Implicit Euler Iteration: 36
+
+INFO:root: error 0.4054088686102609 in newton iteration 1
+INFO:root: error 2.2182731914634293e-07 in newton iteration 2
+INFO:root: error 8.210562898334388e-14 in newton iteration 3
+INFO:root:B(1.8): (-0.0017573249492293585, 0.00017384510541792873, -0.04747872364836253)
+B(1.8-1): (0.00018745044442410963, 0.002487650775759799, -0.024834250195186695)
+INFO:root:
+Implicit Euler Iteration: 37
+
+INFO:root: error 0.4011425499593505 in newton iteration 1
+INFO:root: error 2.1683048907162637e-07 in newton iteration 2
+INFO:root: error 1.8119575552655545e-13 in newton iteration 3
+INFO:root:B(1.85): (-0.0016931728142315521, 0.00039284166797407655, -0.04913655909203836)
+B(1.85-1): (0.0005540488773440139, 0.002762403385895068, -0.021046759130356956)
+INFO:root:
+Implicit Euler Iteration: 38
+
+INFO:root: error 0.3961265617664116 in newton iteration 1
+INFO:root: error 1.7881253466880896e-07 in newton iteration 2
+INFO:root: error 1.6493808139526822e-13 in newton iteration 3
+INFO:root:B(1.9000000000000001): (-0.0015604561406259378, 0.000586432553478687, -0.05057190139231749)
+B(1.9000000000000001-1): (0.0008829742318347966, 0.0029813568777168186, -0.017379130853788928)
+INFO:root:
+Implicit Euler Iteration: 39
+
+INFO:root: error 0.39038646258724624 in newton iteration 1
+INFO:root: error 1.3057588379862577e-07 in newton iteration 2
+INFO:root: error 1.695659147992759e-12 in newton iteration 3
+INFO:root:B(1.9500000000000002): (-0.0014010052602855096, 0.0007432531955979935, -0.05182414383297995)
+B(1.9500000000000002-1): (0.0011420033567086266, 0.0032020058830208135, -0.013816934729342797)
+INFO:root:
+Implicit Euler Iteration: 40
+
+INFO:root: error 0.38394458627215006 in newton iteration 1
+INFO:root: error 9.384750943259758e-08 in newton iteration 2
+INFO:root: error 4.101251257695762e-13 in newton iteration 3
+INFO:root:B(2.0): (-0.0012667778490595793, 0.0008734298130340024, -0.05285926097488894)
+B(2.0-1): (0.0013129630207594277, 0.003463330285976184, -0.010301408237466583)
+INFO:root:
+Implicit Euler Iteration: 41
+
+INFO:root: error 0.3768307658242198 in newton iteration 1
+INFO:root: error 7.834135922270867e-08 in newton iteration 2
+INFO:root: error 4.2999463703515435e-13 in newton iteration 3
+INFO:root:B(2.0500000000000003): (-0.0011749866455833405, 0.0009640109829349276, -0.05367681652361257)
+B(2.0500000000000003-1): (0.0014139265196043015, 0.0037455067790325937, -0.0068838066488584055)
+INFO:root:
+Implicit Euler Iteration: 42
+
+INFO:root: error 0.36907487118890614 in newton iteration 1
+INFO:root: error 6.593211476699207e-08 in newton iteration 2
+INFO:root: error 6.720272038516527e-14 in newton iteration 3
+INFO:root:B(2.1): (-0.001132045907615863, 0.0010082437851061407, -0.054240135794275925)
+B(2.1-1): (0.0014799101271820018, 0.004023586805530301, -0.0035961295444806776)
+INFO:root:
+Implicit Euler Iteration: 43
+
+INFO:root: error 0.3607105740759265 in newton iteration 1
+INFO:root: error 5.2035174059900726e-08 in newton iteration 2
+INFO:root: error 3.574280246228818e-14 in newton iteration 3
+INFO:root:B(2.15): (-0.0011356693583199798, 0.0010077302491156607, -0.054525465072684264)
+B(2.15-1): (0.0015523204545147779, 0.004245753365508335, -0.000503939189957598)
+INFO:root:
+Implicit Euler Iteration: 44
+
+INFO:root: error 0.35177174802928474 in newton iteration 1
+INFO:root: error 4.670381162878041e-08 in newton iteration 2
+INFO:root: error 1.1640340573670693e-14 in newton iteration 3
+INFO:root:B(2.2): (-0.0011840311873147875, 0.0009655938434732122, -0.05450743810699198)
+B(2.2-1): (0.0015646532105881461, 0.0044110609168554965, 0.002346030218411748)
+INFO:root:
+Implicit Euler Iteration: 45
+
+INFO:root: error 0.3422952181047389 in newton iteration 1
+INFO:root: error 4.880719615151861e-08 in newton iteration 2
+INFO:root: error 6.747313105072629e-15 in newton iteration 3
+INFO:root:B(2.25): (-0.0012871602226715382, 0.0009013454741536291, -0.05414798767772952)
+B(2.25-1): (0.00155489565514551, 0.004573900106629887, 0.0050763388857773565)
+INFO:root:
+Implicit Euler Iteration: 46
+
+INFO:root: error 0.33231954085911986 in newton iteration 1
+INFO:root: error 5.030802756671654e-08 in newton iteration 2
+INFO:root: error 4.2872523723969136e-15 in newton iteration 3
+INFO:root:B(2.3000000000000003): (-0.0014272629313493268, 0.0008384182659094624, -0.05337982934417083)
+B(2.3000000000000003-1): (0.0015258097869498399, 0.0047972601709056015, 0.007786720326080462)
+INFO:root:
+Implicit Euler Iteration: 47
+
+INFO:root: error 0.3218845169840652 in newton iteration 1
+INFO:root: error 3.836393939688956e-08 in newton iteration 2
+INFO:root: error 9.271250033546086e-16 in newton iteration 3
+INFO:root:B(2.35): (-0.00155303167949846, 0.0007883211986358638, -0.052164785611422515)
+B(2.35-1): (0.0015005409744221093, 0.005063762202124098, 0.010523075942863842)
+INFO:root:
+Implicit Euler Iteration: 48
+
+INFO:root: error 0.3110300775073093 in newton iteration 1
+INFO:root: error 3.58651212037318e-08 in newton iteration 2
+INFO:root: error 1.030952679119565e-13 in newton iteration 3
+INFO:root:B(2.4000000000000004): (-0.0016345209513787713, 0.0007785924266308728, -0.050478293541302656)
+B(2.4000000000000004-1): (0.0014691499350149555, 0.005357293681330708, 0.01327882810854297)
+INFO:root:
+Implicit Euler Iteration: 49
+
+INFO:root: error 0.2997996575518965 in newton iteration 1
+INFO:root: error 3.2152828451305886e-08 in newton iteration 2
+INFO:root: error 2.2229151099513003e-14 in newton iteration 3
+INFO:root:B(2.45): (-0.0016487926774979276, 0.0008177523004803496, -0.04833454237250749)
+B(2.45-1): (0.0014120911046698616, 0.005654317082218965, 0.016001342504573093)
+INFO:root:
+Implicit Euler Iteration: 50
+
+INFO:root: error 0.2882363311858015 in newton iteration 1
+INFO:root: error 2.8130494277003537e-08 in newton iteration 2
+INFO:root: error 2.2398309815398732e-15 in newton iteration 3
+INFO:root:B(2.5): (-0.0015620777051932964, 0.0008859266046943092, -0.0458040803963055)
+B(2.5-1): (0.0013493469585576692, 0.005930015096402283, 0.01865803345871708)
+INFO:root:
+Implicit Euler Iteration: 51
+
+INFO:root: error 0.27638644441345933 in newton iteration 1
+INFO:root: error 2.3230634448690187e-08 in newton iteration 2
+INFO:root: error 4.5409493836067185e-15 in newton iteration 3
+INFO:root:B(2.5500000000000003): (-0.0013951479702732329, 0.0009718273840329583, -0.04294276571363963)
+B(2.5500000000000003-1): (0.001296682663405802, 0.006181965124629545, 0.021271648473735937)
+INFO:root:
+Implicit Euler Iteration: 52
+
+INFO:root: error 0.2642968079826519 in newton iteration 1
+INFO:root: error 1.997357699444025e-08 in newton iteration 2
+INFO:root: error 2.6471857071998393e-16 in newton iteration 3
+INFO:root:B(2.6): (-0.001135593842338527, 0.0011494366991866354, -0.0396936140322176)
+B(2.6-1): (0.0012725960695682747, 0.006409892643015502, 0.02388823312747835)
+INFO:root:
+Implicit Euler Iteration: 53
+
+INFO:root: error 0.252015488984296 in newton iteration 1
+INFO:root: error 1.9340644060054973e-08 in newton iteration 2
+INFO:root: error 6.062495929158174e-14 in newton iteration 3
+INFO:root:B(2.6500000000000004): (-0.0008287424770495127, 0.0013875836001516265, -0.0362158115610688)
+B(2.6500000000000004-1): (0.001280753709501072, 0.0066273873339544875, 0.02653441151839048)
+INFO:root:
+Implicit Euler Iteration: 54
+
+INFO:root: error 0.23959056983312507 in newton iteration 1
+INFO:root: error 1.525554250996856e-08 in newton iteration 2
+INFO:root: error 4.832756229964101e-16 in newton iteration 3
+INFO:root:B(2.7): (-0.00048611581937565507, 0.0017341158796221545, -0.03250249461097362)
+B(2.7-1): (0.0013311112029932444, 0.006850879651294984, 0.02923142402473958)
+INFO:root:
+Implicit Euler Iteration: 55
+
+INFO:root: error 0.2270715065141212 in newton iteration 1
+INFO:root: error 1.6578326886922167e-08 in newton iteration 2
+INFO:root: error 6.451530327989441e-16 in newton iteration 3
+INFO:root:B(2.75): (-0.00016461216460989954, 0.0021325368428729667, -0.028683625879362146)
+B(2.75-1): (0.0014071181319277374, 0.007053664412866291, 0.03192045232789531)
+INFO:root:
+Implicit Euler Iteration: 56
+
+INFO:root: error 0.21450779280207566 in newton iteration 1
+INFO:root: error 1.220746317766318e-08 in newton iteration 2
+INFO:root: error 2.4098990925472663e-16 in newton iteration 3
+INFO:root:B(2.8000000000000003): (0.00018745044442410963, 0.002487650775759799, -0.024834250195186695)
+B(2.8000000000000003-1): (0.0014972300087066062, 0.007231382164602596, 0.03459279421094858)
+INFO:root:
+Implicit Euler Iteration: 57
+
+INFO:root: error 0.20194859104263152 in newton iteration 1
+INFO:root: error 1.1215797883982558e-08 in newton iteration 2
+INFO:root: error 1.9975739610659402e-14 in newton iteration 3
+INFO:root:B(2.85): (0.0005540488773440139, 0.002762403385895068, -0.021046759130356956)
+B(2.85-1): (0.0015898882086528825, 0.007388139950777605, 0.03724312247100459)
+INFO:root:
+Implicit Euler Iteration: 58
+
+INFO:root: error 0.18944295987731402 in newton iteration 1
+INFO:root: error 1.1647907305938705e-08 in newton iteration 2
+INFO:root: error 1.7601155934419211e-15 in newton iteration 3
+INFO:root:B(2.9000000000000004): (0.0008829742318347966, 0.0029813568777168186, -0.017379130853788928)
+B(2.9000000000000004-1): (0.0016635491334699118, 0.0075334874186464675, 0.03987537077386354)
+INFO:root:
+Implicit Euler Iteration: 59
+
+INFO:root: error 0.17704090777663745 in newton iteration 1
+INFO:root: error 1.4418201580123892e-08 in newton iteration 2
+INFO:root: error 7.072589361963519e-16 in newton iteration 3
+INFO:root:B(2.95): (0.0011420033567086266, 0.0032020058830208135, -0.013816934729342797)
+B(2.95-1): (0.0017123110465743642, 0.007658199187838021, 0.04248030821946381)
+DEBUG:matplotlib.pyplot:Loaded backend qt5agg version unknown.
+DEBUG:matplotlib.pyplot:Loaded backend Qt5Agg version unknown.
+DEBUG:parso.cache:pickle loaded: /home/ams/ngsolve/virtngs/lib/python3.8/site-packages/jedi/third_party/typeshed/stdlib/2and3/builtins.pyi
+DEBUG:parso.cache:pickle loaded: /home/ams/.local/lib/python3.8/site-packages/matplotlib/__init__.py
+DEBUG:parso.cache:pickle loaded: /home/ams/.local/lib/python3.8/site-packages/matplotlib/pyplot.py
+DEBUG:parso.cache:pickle loaded: /home/ams/.local/lib/python3.8/site-packages/matplotlib/_pylab_helpers.py
+DEBUG:parso.cache:pickle loaded: /usr/lib/python3.8/typing.py
+DEBUG:parso.cache:pickle loaded: /home/ams/ngsolve/virtngs/lib/python3.8/site-packages/jedi/third_party/typeshed/stdlib/3/typing.pyi
+DEBUG:parso.cache:pickle loaded: /home/ams/ngsolve/virtngs/lib/python3.8/site-packages/jedi/third_party/typeshed/stdlib/3/sys.pyi
+DEBUG:parso.cache:pickle loaded: /usr/lib/python3.8/abc.py
+DEBUG:parso.cache:pickle loaded: /home/ams/ngsolve/virtngs/lib/python3.8/site-packages/jedi/third_party/typeshed/stdlib/3/abc.pyi
+DEBUG:matplotlib.pyplot:Loaded backend Qt5Agg version unknown.
+DEBUG:matplotlib.pyplot:Loaded backend Qt5Agg version unknown.
+DEBUG:matplotlib.pyplot:Loaded backend Qt5Agg version unknown.
+DEBUG:matplotlib.pyplot:Loaded backend Qt5Agg version unknown.
