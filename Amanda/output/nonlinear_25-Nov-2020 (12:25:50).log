@@ -1,0 +1,24 @@
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+MAX_STEPS = 10
+dt = 0.05
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root: error 352.8181219447564 in newton iteration 1
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+MAX_STEPS = 10
+dt = 0.05
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root: error 352.8181219446315 in newton iteration 1

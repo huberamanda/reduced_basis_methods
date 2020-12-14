@@ -1,0 +1,933 @@
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+MAX_STEPS = 6
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+MAX_STEPS = 6
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root: error 352.2338179019464 in newton iteration 1
+INFO:root: error 4.533056281860108 in newton iteration 2
+INFO:root: error 0.4063241198605755 in newton iteration 3
+INFO:root: error 0.04141321965969927 in newton iteration 4
+INFO:root: error 0.011672815501507132 in newton iteration 5
+INFO:root: error 0.0005857488558645685 in newton iteration 6
+INFO:root: error 3.0839361120927257e-05 in newton iteration 7
+INFO:root: error 4.885968165775251e-07 in newton iteration 8
+INFO:root: error 7.181615871633395e-12 in newton iteration 9
+INFO:root:B(0.016882621449211987): (-0.001455639336584528, 0.04021201681392966, 0.02314670381394756)
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root: error 1.9851601408531008 in newton iteration 1
+INFO:root: error 0.00018557866684027727 in newton iteration 2
+INFO:root: error 3.861212888937389e-06 in newton iteration 3
+INFO:root: error 1.1312999778618295e-11 in newton iteration 4
+INFO:root:B(0.08469765338343388): (-0.0011707489040008732, 0.030403112305317632, 0.018101864181886)
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root: error 187.0345450015151 in newton iteration 1
+INFO:root: error 0.11704104357204502 in newton iteration 2
+INFO:root: error 0.0021955157443134775 in newton iteration 3
+INFO:root: error 2.3113341633197464e-05 in newton iteration 4
+INFO:root: error 1.1054354917155452e-07 in newton iteration 5
+INFO:root: error 3.760699192619675e-11 in newton iteration 6
+INFO:root:B(0.19034520347920075): (0.0004060676948030234, -0.007475027613619932, 0.0017476012768306843)
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root: error 1.172801795346012 in newton iteration 1
+INFO:root: error 0.0005026191891476869 in newton iteration 2
+INFO:root: error 1.4767948823386495e-06 in newton iteration 3
+INFO:root: error 6.403942166043384e-10 in newton iteration 4
+INFO:root:B(0.30965479652079925): (0.00013488320440147055, -0.007155841738331314, 0.006700181572109183)
+INFO:root:
+Implicit Euler Iteration: 4
+
+INFO:root: error 187.16892580276934 in newton iteration 1
+INFO:root: error 0.07896435863698364 in newton iteration 2
+INFO:root: error 0.0025420466662005323 in newton iteration 3
+INFO:root: error 0.0002427648137650273 in newton iteration 4
+INFO:root: error 1.6912968424181118e-05 in newton iteration 5
+INFO:root: error 3.134488767991692e-07 in newton iteration 6
+INFO:root: error 4.0223004679299867e-13 in newton iteration 7
+INFO:root:B(0.4153023466165661): (-0.0017132023561906274, 0.02414039289642181, 0.026127287160442735)
+INFO:root:
+Implicit Euler Iteration: 5
+
+INFO:root: error 2.2615190454738516 in newton iteration 1
+INFO:root: error 4.511391817978168e-05 in newton iteration 2
+INFO:root: error 3.709414899414785e-08 in newton iteration 3
+INFO:root: error 7.399510243833437e-15 in newton iteration 4
+INFO:root:B(0.483117378550788): (-0.0018144168468558646, 0.021821678943956237, 0.026136620898861474)
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+MAX_STEPS = 6
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root: error 352.8181219447573 in newton iteration 1
+INFO:root: error 4.541289927237602 in newton iteration 2
+DEBUG:parso.cache:pickle loaded: /home/ams/.local/lib/python3.8/site-packages/numpy/__init__.py
+DEBUG:parso.cache:pickle loaded: /home/ams/.local/lib/python3.8/site-packages/numpy/core/function_base.py
+DEBUG:parso.cache:pickle loaded: /home/ams/ngsolve/virtngs/lib/python3.8/site-packages/jedi/third_party/typeshed/stdlib/2and3/builtins.pyi
+DEBUG:parso.cache:pickle loaded: /home/ams/ngsolve/virtngs/lib/python3.8/site-packages/jedi/third_party/typeshed/stdlib/3/sys.pyi
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+MAX_STEPS = 6
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+MAX_STEPS = 6
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+MAX_STEPS = 6
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+MAX_STEPS = 11
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root: error 352.81812194478175 in newton iteration 1
+INFO:root: error 4.541289927237685 in newton iteration 2
+INFO:root: error 0.41049857627743125 in newton iteration 3
+INFO:root: error 0.04142254964153099 in newton iteration 4
+INFO:root: error 0.011665142854050493 in newton iteration 5
+INFO:root: error 0.0005846569538370982 in newton iteration 6
+INFO:root: error 3.052610759657266e-05 in newton iteration 7
+INFO:root: error 4.77836096056955e-07 in newton iteration 8
+INFO:root: error 6.89702527304619e-12 in newton iteration 9
+INFO:root:B(0.1): (0.0014566474609323922, -0.04025392627254034, -0.02316920101671732)
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root: error 1410.345172956812 in newton iteration 1
+INFO:root: error 0.7294197253590878 in newton iteration 2
+INFO:root: error 0.31324404534227035 in newton iteration 3
+INFO:root: error 0.015405948460361009 in newton iteration 4
+INFO:root: error 0.0031600611426543697 in newton iteration 5
+INFO:root: error 7.859002390814055e-05 in newton iteration 6
+INFO:root: error 8.435654449084792e-08 in newton iteration 7
+INFO:root: error 1.34993696461019e-13 in newton iteration 8
+INFO:root:B(0.15000000000000002): (-0.0016756945793107087, 0.04934209286310125, 0.028244750190444274)
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root: error 1371.1836931899213 in newton iteration 1
+INFO:root: error 0.6757674664792412 in newton iteration 2
+INFO:root: error 0.23287522188501306 in newton iteration 3
+INFO:root: error 0.014590091395563432 in newton iteration 4
+INFO:root: error 0.0043745570879832755 in newton iteration 5
+INFO:root: error 0.0003490864701007131 in newton iteration 6
+INFO:root: error 2.7645043747749834e-06 in newton iteration 7
+INFO:root: error 6.617844875645254e-10 in newton iteration 8
+INFO:root:B(0.20000000000000004): (0.001740308296517252, -0.03657450065535804, -0.023093047971399713)
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root: error 1378.076649262579 in newton iteration 1
+INFO:root: error 0.49641252878907494 in newton iteration 2
+INFO:root: error 0.4289040796223781 in newton iteration 3
+INFO:root: error 0.011371137594502655 in newton iteration 4
+INFO:root: error 0.0020125264750053737 in newton iteration 5
+INFO:root: error 6.836574204848112e-05 in newton iteration 6
+INFO:root: error 4.243871258887808e-08 in newton iteration 7
+INFO:root: error 7.022968574195765e-13 in newton iteration 8
+INFO:root:B(0.25000000000000006): (-0.0013288190898223945, 0.04632111995835855, 0.025120985642127246)
+INFO:root:
+Implicit Euler Iteration: 4
+
+INFO:root: error 1376.6692945122566 in newton iteration 1
+INFO:root: error 0.6221970015316064 in newton iteration 2
+INFO:root: error 0.36117909714896124 in newton iteration 3
+INFO:root: error 0.014980546652577788 in newton iteration 4
+INFO:root: error 0.0025704089671861156 in newton iteration 5
+INFO:root: error 9.297103048620056e-05 in newton iteration 6
+INFO:root: error 3.188949905407124e-06 in newton iteration 7
+INFO:root: error 1.0024137982292744e-11 in newton iteration 8
+INFO:root:B(0.30000000000000004): (0.0018912779262295625, -0.03930254548707986, -0.025260637465801067)
+INFO:root:
+Implicit Euler Iteration: 5
+
+INFO:root: error 1377.0795069016106 in newton iteration 1
+INFO:root: error 0.5325686542210489 in newton iteration 2
+INFO:root: error 0.34146780896898854 in newton iteration 3
+INFO:root: error 0.017722308219664053 in newton iteration 4
+INFO:root: error 0.006205972332363897 in newton iteration 5
+INFO:root: error 0.00045299281230244974 in newton iteration 6
+INFO:root: error 3.584435288983047e-05 in newton iteration 7
+INFO:root: error 2.1213840893724846e-07 in newton iteration 8
+INFO:root: error 6.947740373121017e-14 in newton iteration 9
+INFO:root:B(0.3500000000000001): (-0.0013280891207124292, 0.04435563826910341, 0.02383326538982147)
+INFO:root:
+Implicit Euler Iteration: 6
+
+INFO:root: error 1376.8632895113044 in newton iteration 1
+INFO:root: error 0.6104134455681783 in newton iteration 2
+INFO:root: error 0.354942013965238 in newton iteration 3
+INFO:root: error 0.015092471535725606 in newton iteration 4
+INFO:root: error 0.0025666349926007264 in newton iteration 5
+INFO:root: error 9.236278538426383e-05 in newton iteration 6
+INFO:root: error 2.999034796322467e-06 in newton iteration 7
+INFO:root: error 8.149023379884665e-12 in newton iteration 8
+INFO:root:B(0.40000000000000013): (0.001825062325098703, -0.04062533265919183, -0.025946049758534262)
+INFO:root:
+Implicit Euler Iteration: 7
+
+INFO:root: error 1377.0384049707907 in newton iteration 1
+INFO:root: error 0.542915414779434 in newton iteration 2
+INFO:root: error 0.3677363778960831 in newton iteration 3
+INFO:root: error 0.017607958426441972 in newton iteration 4
+INFO:root: error 0.00548774150535316 in newton iteration 5
+INFO:root: error 0.00044278421243071787 in newton iteration 6
+INFO:root: error 4.057227424893568e-05 in newton iteration 7
+INFO:root: error 3.227736076700238e-07 in newton iteration 8
+INFO:root: error 2.2591664468951783e-13 in newton iteration 9
+INFO:root:B(0.45000000000000007): (-0.0014204515774116743, 0.043426381900386835, 0.023481276708217185)
+DEBUG:matplotlib.pyplot:Loaded backend nbAgg version unknown.
+DEBUG:matplotlib.pyplot:Loaded backend nbAgg version unknown.
+DEBUG:matplotlib.pyplot:Loaded backend nbAgg version unknown.
+DEBUG:matplotlib.pyplot:Loaded backend nbAgg version unknown.
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+MAX_STEPS = 8
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root: error 352.81812194470325 in newton iteration 1
+INFO:root: error 4.5412899272375675 in newton iteration 2
+INFO:root: error 0.41049857627743713 in newton iteration 3
+INFO:root: error 0.041422549641536494 in newton iteration 4
+INFO:root: error 0.01166514285405049 in newton iteration 5
+INFO:root: error 0.0005846569538370948 in newton iteration 6
+INFO:root: error 3.0526107596572255e-05 in newton iteration 7
+INFO:root: error 4.778360960568113e-07 in newton iteration 8
+INFO:root: error 6.897025273429748e-12 in newton iteration 9
+INFO:root:B(0.1): (0.0014566474609323619, -0.04025392627254052, -0.023169201016717295)
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root: error 1410.3451729566111 in newton iteration 1
+INFO:root: error 0.7294197253591795 in newton iteration 2
+INFO:root: error 0.3132440453421566 in newton iteration 3
+INFO:root: error 0.015405948460365974 in newton iteration 4
+INFO:root: error 0.003160061142654377 in newton iteration 5
+INFO:root: error 7.859002390814073e-05 in newton iteration 6
+INFO:root: error 8.435654449085326e-08 in newton iteration 7
+INFO:root: error 1.3499369650171635e-13 in newton iteration 8
+INFO:root:B(0.15000000000000002): (-0.0016756945782896234, 0.0493420928579601, 0.028244750190539965)
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root: error 1371.1836931902642 in newton iteration 1
+INFO:root: error 0.6757674658389187 in newton iteration 2
+INFO:root: error 0.23287522396216906 in newton iteration 3
+INFO:root: error 0.014590091349835863 in newton iteration 4
+INFO:root: error 0.004374557076345034 in newton iteration 5
+INFO:root: error 0.00034908646872826586 in newton iteration 6
+INFO:root: error 2.7645043555837533e-06 in newton iteration 7
+INFO:root: error 6.617846223003611e-10 in newton iteration 8
+INFO:root:B(0.20000000000000004): (0.0017403082981007122, -0.036574500660243724, -0.023093047970509477)
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root: error 1378.0766492623834 in newton iteration 1
+INFO:root: error 0.4964125295623989 in newton iteration 2
+INFO:root: error 0.42890407724014584 in newton iteration 3
+INFO:root: error 0.011371137652349584 in newton iteration 4
+INFO:root: error 0.0020125264791214497 in newton iteration 5
+INFO:root: error 6.836574130223276e-05 in newton iteration 6
+INFO:root: error 4.243865215646755e-08 in newton iteration 7
+INFO:root: error 7.022955121084489e-13 in newton iteration 8
+INFO:root:B(0.25000000000000006): (-0.0013288190924710713, 0.046321119966683665, 0.0251209856410985)
+INFO:root:
+Implicit Euler Iteration: 4
+
+INFO:root: error 1376.6692945168468 in newton iteration 1
+INFO:root: error 0.6221969934508261 in newton iteration 2
+INFO:root: error 0.3611789974455374 in newton iteration 3
+INFO:root: error 0.014980546472562428 in newton iteration 4
+INFO:root: error 0.0025704089832016587 in newton iteration 5
+INFO:root: error 9.297103972622944e-05 in newton iteration 6
+INFO:root: error 3.1889485250015812e-06 in newton iteration 7
+INFO:root: error 1.0024121351146218e-11 in newton iteration 8
+INFO:root:B(0.30000000000000004): (0.0018912779310066483, -0.03930254549251429, -0.0252606374679783)
+INFO:root:
+Implicit Euler Iteration: 5
+
+INFO:root: error 1377.0795069040566 in newton iteration 1
+INFO:root: error 0.5325686527487311 in newton iteration 2
+INFO:root: error 0.34146783388589114 in newton iteration 3
+INFO:root: error 0.01772231100200787 in newton iteration 4
+INFO:root: error 0.006205972281066412 in newton iteration 5
+INFO:root: error 0.00045299281155305185 in newton iteration 6
+INFO:root: error 3.584435714783045e-05 in newton iteration 7
+INFO:root: error 2.121385104634799e-07 in newton iteration 8
+INFO:root: error 6.947749161264181e-14 in newton iteration 9
+INFO:root:B(0.3500000000000001): (-0.0013280891130632117, 0.0443556382632041, 0.02383326538815311)
+INFO:root:
+Implicit Euler Iteration: 6
+
+INFO:root: error 1376.8632895121325 in newton iteration 1
+INFO:root: error 0.6104134444012267 in newton iteration 2
+INFO:root: error 0.3549420071230746 in newton iteration 3
+INFO:root: error 0.015092471441566366 in newton iteration 4
+INFO:root: error 0.002566634984513443 in newton iteration 5
+INFO:root: error 9.236278606718793e-05 in newton iteration 6
+INFO:root: error 2.999034552711227e-06 in newton iteration 7
+INFO:root: error 8.149017917142443e-12 in newton iteration 8
+INFO:root:B(0.40000000000000013): (0.0018250623341928237, -0.04062533266476903, -0.025946049759512414)
+INFO:root:
+Implicit Euler Iteration: 7
+
+INFO:root: error 1377.038404968742 in newton iteration 1
+INFO:root: error 0.542915415156035 in newton iteration 2
+INFO:root: error 0.3677363822921727 in newton iteration 3
+INFO:root: error 0.017607960058543218 in newton iteration 4
+INFO:root: error 0.005487741483969331 in newton iteration 5
+INFO:root: error 0.0004427842135925584 in newton iteration 6
+INFO:root: error 4.057227661077159e-05 in newton iteration 7
+INFO:root: error 3.2277368235275766e-07 in newton iteration 8
+INFO:root: error 2.2591675825764475e-13 in newton iteration 9
+INFO:root:B(0.45000000000000007): (-0.0014204515819766573, 0.0434263819820126, 0.023481276691863787)
+DEBUG:matplotlib.pyplot:Loaded backend nbAgg version unknown.
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0.
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'padmaa' (padmaa-Medium-0.5.ttf) normal normal normal normal>) = 10.0
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Light.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Regular.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Phetsarath OT' (Phetsarath_OT.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-BI.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Mono' (NotoMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstDigital' (KacstDigital.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstBook' (KacstBook.ttf) normal normal book normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gayathri' (Gayathri-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samanata' (samanata.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Gurmukhi' (Lohit-Gurmukhi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'OpenSymbol' (opens___.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Regular.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-L.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMonoBold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-LI.ttf) italic normal light normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk Book' (PadaukBook-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-BoldItalic.ttf) italic normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSansBoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Kannada' (Lohit-Kannada.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMonoOblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rekha' (Rekha.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-Light.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Sans CJK JP' (NotoSansCJK-Bold.ttc) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Medium.ttf) normal normal medium normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-R.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-Book.otf) normal normal book normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Khmer OS' (KhmerOS.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Karumbi' (Karumbi-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Saab' (Saab.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Light.ttf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-B.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Tamil Classical' (Lohit-Tamil-Classical.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Tamil' (Samyak-Tamil.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-RI.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sarai' (Sarai.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk' (Padauk-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-LightOblique.ttf) oblique normal light normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-Th.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstScreen' (KacstScreen.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk' (Padauk-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Navilu' (Navilu.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerifBoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'RaghuMalayalamSans' (RaghuMalayalamSans-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Bold.otf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-RI.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Bengali' (Lohit-Bengali.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Uroob' (Uroob-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-SemiBold.ttf) normal normal semibold normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-Demi.otf) normal normal book normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstQurn' (KacstQurn.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kalimati' (kalimati.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'AnjaliOldLipi' (AnjaliOldLipi-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Malayalam' (Lohit-Malayalam.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Keraleeyam' (Keraleeyam-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerifBold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Standard Symbols PS' (StandardSymbolsPS.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gayathri' (Gayathri-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mukti Narrow' (MuktiNarrowBold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Dyuthi' (Dyuthi-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Condensed' (Ubuntu-C.ttf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Manjari' (Manjari-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'D050000L' (D050000L.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSans.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-LightItalic.otf) italic normal light normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Oblique.otf) oblique normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstTitleL' (KacstTitleL.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-R.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Telugu' (Lohit-Telugu.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'padmaa-Bold.1.1' (padmaa-Bold.1.1.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Malayalam' (Samyak-Malayalam.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstPoster' (KacstPoster.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Tamil' (Lohit-Tamil.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sawasdee' (Sawasdee-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Devanagari' (Lohit-Devanagari.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mitra Mono' (mitra.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Manjari' (Manjari-Thin.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Khmer OS System' (KhmerOSsys.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstNaskh' (KacstNaskh.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Assamese' (Lohit-Assamese.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Gujarati' (Lohit-Gujarati.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Sahadeva' (sahadeva.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Yrsa' (Yrsa-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Medium.ttf) normal normal medium normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-Roman.otf) normal normal roman normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Vemana2000' (vemana2000.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-DemiOblique.otf) oblique normal demi normal>) = 11.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Mono PS' (NimbusMonoPS-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rachana' (Rachana-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstDecorative' (KacstDecorative.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'P052' (P052-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'ori1Uni' (utkal.ttf) normal normal medium normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Regular.otf) normal normal roman normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-BI.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSansOblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Meera' (Meera-Regular.ttf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'LKLUG' (lklug.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Gujarati' (Samyak-Gujarati.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSans' (FreeSansBold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gubbi' (Gubbi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Jamrul' (JamrulNormal.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gargi' (Gargi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Pothana2000' (Pothana2000.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-MI.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rasa' (Rasa-SemiBold.ttf) normal normal semibold normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Suruma' (Suruma.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Regular.ttc) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstOne' (KacstOne.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Gayathri' (Gayathri-Thin.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'padmaa' (padmaa.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Pagul' (Pagul.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-Demi.otf) normal normal demi normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Bold.ttf) normal normal 700 condensed>) = 10.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans Narrow' (LiberationSansNarrow-Italic.ttf) italic normal 400 condensed>) = 11.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Waree' (Waree-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-BoldOblique.otf) oblique normal 700 condensed>) = 11.535
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Loma' (Loma-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Gothic' (URWGothic-BookOblique.otf) oblique normal book normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstArt' (KacstArt.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu Mono' (UbuntuMono-B.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kinnari' (Kinnari-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ubuntu' (Ubuntu-M.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Sans' (LiberationSans-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-DemiItalic.otf) italic normal book normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Mukti Narrow' (MuktiNarrow.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Lohit Odia' (Lohit-Odia.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans Narrow' (NimbusSansNarrow-Regular.otf) normal normal 400 condensed>) = 10.25
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nakula' (nakula.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Mono' (LiberationMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-Italic.otf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Sans' (NimbusSans-Regular.otf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Z003' (Z003-MediumItalic.otf) italic normal medium normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstOffice' (KacstOffice.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstLetter' (KacstLetter.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Noto Serif CJK JP' (NotoSerifCJK-Bold.ttc) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Ani' (ani.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Garuda' (Garuda-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-BdIta.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Norasi' (Norasi-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'URW Bookman' (URWBookman-Light.otf) normal normal light normal>) = 10.24
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Padauk Book' (PadaukBook-Regular.ttf) normal normal book normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typist' (TlwgTypist-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Umpush' (Umpush-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Mono' (TlwgMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Purisa' (Purisa-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeMono' (FreeMonoBoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'mry_KacstQurn' (mry_KacstQurn.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'aakar' (aakar-medium.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstPen' (KacstPen.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstOne' (KacstOne-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Samyak Devanagari' (Samyak-Devanagari.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'C059' (C059-Roman.otf) normal normal roman normal>) = 10.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Chilanka' (Chilanka-Regular.otf) normal normal regular normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Abyssinica SIL' (AbyssinicaSIL-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Liberation Serif' (LiberationSerif-Regular.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Laksaman' (Laksaman-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Manjari' (Manjari-Bold.otf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Chandas' (chandas1-2.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Droid Sans Fallback' (DroidSansFallbackFull.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Rachana' (Rachana-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Kalapi' (Kalapi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Likhan' (LikhanNormal.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'FreeSerif' (FreeSerifItalic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-BoldItalic.otf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstFarsi' (KacstFarsi.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tibetan Machine Uni' (TibetanMachineUni.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typo' (TlwgTypo-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'KacstTitle' (KacstTitle.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Nimbus Roman' (NimbusRoman-Italic.otf) italic normal roman normal>) = 11.145
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'Tlwg Typewriter' (TlwgTypewriter-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/home/ams/.local/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+tval = [0.1   0.105 0.11  0.115 0.12  0.125 0.13  0.135 0.14  0.145 0.15  0.155
+ 0.16  0.165 0.17  0.175 0.18  0.185 0.19  0.195 0.2   0.205 0.21  0.215
+ 0.22  0.225 0.23  0.235 0.24  0.245]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 33; new: 76
+DEBUG:parso.python.diff:-> code[delete] old[1:3] new[1:0]
+DEBUG:parso.python.diff:-> code[equal] old[4:4] new[1:1]
+DEBUG:parso.python.diff:parse_part from 1 to 1 (to 1 in part parser)
+DEBUG:parso.python.diff:-> code[replace] old[5:5] new[2:2]
+DEBUG:parso.python.diff:parse_part from 2 to 2 (to 3 in part parser)
+DEBUG:parso.python.diff:-> code[equal] old[6:8] new[3:5]
+DEBUG:parso.python.diff:copy old[7:8] new[3:5]
+DEBUG:parso.python.diff:-> code[replace] old[9:10] new[6:6]
+DEBUG:parso.python.diff:parse_part from 6 to 7 (to 8 in part parser)
+DEBUG:parso.python.diff:-> code[equal] old[11:15] new[7:11]
+DEBUG:parso.python.diff:parse_part from 8 to 15 (to 17 in part parser)
+DEBUG:parso.python.diff:-> code[replace] old[16:16] new[12:12]
+DEBUG:parso.python.diff:-> code[equal] old[17:18] new[13:14]
+DEBUG:parso.python.diff:-> code[replace] old[19:19] new[15:15]
+DEBUG:parso.python.diff:-> code[equal] old[20:23] new[16:19]
+DEBUG:parso.python.diff:copy old[22:22] new[16:18]
+DEBUG:parso.python.diff:parse_part from 19 to 22 (to 22 in part parser)
+DEBUG:parso.python.diff:-> code[replace] old[24:27] new[20:22]
+DEBUG:parso.python.diff:-> code[equal] old[28:32] new[23:27]
+DEBUG:parso.python.diff:parse_part from 23 to 23 (to 28 in part parser)
+DEBUG:parso.python.diff:parse_part from 24 to 29 (to 30 in part parser)
+DEBUG:parso.python.diff:-> code[replace] old[33:33] new[28:76]
+DEBUG:parso.python.diff:parse_part from 30 to 76 (to 75 in part parser)
+DEBUG:parso.python.diff:diff parser end
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+tval = [0.1   0.105 0.11  0.115 0.12  0.125 0.13  0.135 0.14  0.145 0.15  0.155
+ 0.16  0.165 0.17  0.175 0.18  0.185 0.19  0.195 0.2   0.205 0.21  0.215
+ 0.22  0.225 0.23  0.235 0.24  0.245]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:B(0.1): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root:B(0.10500000000000001): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root:B(0.11000000000000001): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root:B(0.11500000000000002): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 4
+
+INFO:root:B(0.12000000000000002): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 5
+
+INFO:root:B(0.12500000000000003): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 6
+
+INFO:root:B(0.13000000000000003): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 7
+
+INFO:root:B(0.13500000000000004): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 8
+
+INFO:root:B(0.14000000000000004): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 9
+
+INFO:root:B(0.14500000000000005): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 10
+
+INFO:root:B(0.15000000000000005): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 11
+
+INFO:root:B(0.15500000000000005): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 12
+
+INFO:root:B(0.16000000000000006): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 13
+
+INFO:root:B(0.16500000000000006): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 14
+
+INFO:root:B(0.17000000000000007): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 15
+
+INFO:root:B(0.17500000000000007): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 16
+
+INFO:root:B(0.18000000000000008): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 17
+
+INFO:root:B(0.18500000000000008): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 18
+
+INFO:root:B(0.19000000000000009): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 19
+
+INFO:root:B(0.1950000000000001): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 20
+
+INFO:root:B(0.2000000000000001): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 21
+
+INFO:root:B(0.2050000000000001): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 22
+
+INFO:root:B(0.2100000000000001): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 23
+
+INFO:root:B(0.2150000000000001): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 24
+
+INFO:root:B(0.2200000000000001): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 25
+
+INFO:root:B(0.22500000000000012): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 26
+
+INFO:root:B(0.23000000000000012): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 27
+
+INFO:root:B(0.23500000000000013): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 28
+
+INFO:root:B(0.24000000000000013): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 29
+
+INFO:root:B(0.24500000000000013): (0.0, 0.0, 0.0)
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+tval = [0.1   0.105 0.11  0.115 0.12  0.125 0.13  0.135 0.14  0.145 0.15  0.155
+ 0.16  0.165 0.17  0.175 0.18  0.185 0.19  0.195 0.2   0.205 0.21  0.215
+ 0.22  0.225 0.23  0.235 0.24  0.245]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+tval = [0.1   0.105 0.11  0.115 0.12  0.125 0.13  0.135 0.14  0.145 0.15  0.155
+ 0.16  0.165 0.17  0.175 0.18  0.185 0.19  0.195 0.2   0.205 0.21  0.215
+ 0.22  0.225 0.23  0.235 0.24  0.245]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:B(0.1): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root:B(0.10500000000000001): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root:B(0.11000000000000001): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root:B(0.11500000000000002): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 4
+
+INFO:root:B(0.12000000000000002): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 5
+
+INFO:root:B(0.12500000000000003): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 6
+
+INFO:root:B(0.13000000000000003): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 7
+
+INFO:root:B(0.13500000000000004): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 8
+
+INFO:root:B(0.14000000000000004): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 9
+
+INFO:root:B(0.14500000000000005): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 10
+
+INFO:root:B(0.15000000000000005): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 11
+
+INFO:root:B(0.15500000000000005): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 12
+
+INFO:root:B(0.16000000000000006): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 13
+
+INFO:root:B(0.16500000000000006): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 14
+
+INFO:root:B(0.17000000000000007): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 15
+
+INFO:root:B(0.17500000000000007): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 16
+
+INFO:root:B(0.18000000000000008): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 17
+
+INFO:root:B(0.18500000000000008): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 18
+
+INFO:root:B(0.19000000000000009): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 19
+
+INFO:root:B(0.1950000000000001): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 20
+
+INFO:root:B(0.2000000000000001): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 21
+
+INFO:root:B(0.2050000000000001): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 22
+
+INFO:root:B(0.2100000000000001): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 23
+
+INFO:root:B(0.2150000000000001): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 24
+
+INFO:root:B(0.2200000000000001): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 25
+
+INFO:root:B(0.22500000000000012): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 26
+
+INFO:root:B(0.23000000000000012): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 27
+
+INFO:root:B(0.23500000000000013): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 28
+
+INFO:root:B(0.24000000000000013): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 29
+
+INFO:root:B(0.24500000000000013): (0.0, 0.0, 0.0)
+DEBUG:matplotlib.pyplot:Loaded backend nbAgg version unknown.

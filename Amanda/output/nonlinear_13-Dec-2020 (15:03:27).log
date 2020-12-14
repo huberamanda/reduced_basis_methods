@@ -1,0 +1,119 @@
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+MAX_STEPS = 8
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:B(0.1): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root:B(0.15000000000000002): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root:B(0.20000000000000004): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root:B(0.25000000000000006): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 4
+
+INFO:root:B(0.30000000000000004): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 5
+
+INFO:root:B(0.3500000000000001): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 6
+
+INFO:root:B(0.40000000000000013): (0.0, 0.0, 0.0)
+INFO:root:
+Implicit Euler Iteration: 7
+
+INFO:root:B(0.45000000000000007): (0.0, 0.0, 0.0)
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+MAX_STEPS = 8
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root: error 352.8181219447706 in newton iteration 1
+INFO:root: error 4.541289927237484 in newton iteration 2
+INFO:root: error 0.41049857627745856 in newton iteration 3
+INFO:root: error 0.041422549641531026 in newton iteration 4
+INFO:root: error 0.011665142854050448 in newton iteration 5
+INFO:root: error 0.0005846569538370913 in newton iteration 6
+INFO:root: error 3.0526107596573516e-05 in newton iteration 7
+INFO:root: error 4.77836096056837e-07 in newton iteration 8
+INFO:root: error 6.897025273191873e-12 in newton iteration 9
+INFO:root:B(0.1): (0.0014566474609323545, -0.04025392627254048, -0.0231692010167173)
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root: error 1410.3451729563842 in newton iteration 1
+INFO:root: error 0.7294197253591114 in newton iteration 2
+INFO:root: error 0.31324404534212347 in newton iteration 3
+INFO:root: error 0.015405948460365783 in newton iteration 4
+INFO:root: error 0.0031600611426542786 in newton iteration 5
+INFO:root: error 7.859002390814081e-05 in newton iteration 6
+INFO:root: error 8.4356544490879e-08 in newton iteration 7
+INFO:root: error 1.349936964102095e-13 in newton iteration 8
+INFO:root:B(0.15000000000000002): (-0.0016756945782245355, 0.04934209285763205, 0.02824475019054606)
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root: error 1371.1836931899604 in newton iteration 1
+INFO:root: error 0.6757674657981211 in newton iteration 2
+INFO:root: error 0.23287522409474648 in newton iteration 3
+INFO:root: error 0.01459009134691426 in newton iteration 4
+INFO:root: error 0.00437455707560244 in newton iteration 5
+INFO:root: error 0.0003490864686407073 in newton iteration 6
+INFO:root: error 2.7645043543586573e-06 in newton iteration 7
+INFO:root: error 6.617846309003791e-10 in newton iteration 8
+INFO:root:B(0.20000000000000004): (0.001740308298201785, -0.03657450066055556, -0.02309304797045267)
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root: error 1378.0766492623372 in newton iteration 1
+INFO:root: error 0.4964125296116904 in newton iteration 2
+INFO:root: error 0.42890407708814354 in newton iteration 3
+INFO:root: error 0.011371137656043981 in newton iteration 4
+INFO:root: error 0.002012526479384279 in newton iteration 5
+INFO:root: error 6.836574125460904e-05 in newton iteration 6
+INFO:root: error 4.243864829908231e-08 in newton iteration 7
+INFO:root: error 7.022954262973201e-13 in newton iteration 8
+INFO:root:B(0.25000000000000006): (-0.0013288190923771192, 0.04632111996647162, 0.025120985641154267)
+INFO:root:
+Implicit Euler Iteration: 4
+
+INFO:root: error 1376.669294516755 in newton iteration 1
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+MAX_STEPS = 8
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+MAX_STEPS = 8
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+

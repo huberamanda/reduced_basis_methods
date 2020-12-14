@@ -1,0 +1,709 @@
+DEBUG:root:An unexpected error occurred while tokenizing input
+The following traceback may be corrupted or invalid
+The error message is: ('EOF in multi-line string', (1, 0))
+
+DEBUG:root:An unexpected error occurred while tokenizing input
+The following traceback may be corrupted or invalid
+The error message is: ('EOF in multi-line string', (1, 0))
+
+DEBUG:root:An unexpected error occurred while tokenizing input
+The following traceback may be corrupted or invalid
+The error message is: ('EOF in multi-line string', (1, 0))
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root:
+Implicit Euler Iteration: 4
+
+INFO:root:
+Implicit Euler Iteration: 5
+
+INFO:root:
+Implicit Euler Iteration: 6
+
+INFO:root:
+Implicit Euler Iteration: 7
+
+INFO:root:
+Implicit Euler Iteration: 8
+
+INFO:root:
+Implicit Euler Iteration: 9
+
+INFO:root:
+Implicit Euler Iteration: 10
+
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 11; new: 23
+DEBUG:parso.python.diff:-> code[replace] old[1:2] new[1:8]
+DEBUG:parso.python.diff:parse_part from 1 to 8 (to 9 in part parser)
+DEBUG:parso.python.diff:-> code[equal] old[3:3] new[9:9]
+DEBUG:parso.python.diff:parse_part from 9 to 23 (to 22 in part parser)
+DEBUG:parso.python.diff:-> code[replace] old[4:5] new[10:13]
+DEBUG:parso.python.diff:-> code[equal] old[6:6] new[14:14]
+DEBUG:parso.python.diff:-> code[replace] old[7:11] new[15:23]
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 23; new: 50
+DEBUG:parso.python.diff:-> code[replace] old[1:8] new[1:30]
+DEBUG:parso.python.diff:parse_part from 1 to 30 (to 31 in part parser)
+DEBUG:parso.python.diff:-> code[equal] old[9:10] new[31:32]
+DEBUG:parso.python.diff:parse_part from 31 to 50 (to 49 in part parser)
+DEBUG:parso.python.diff:-> code[replace] old[11:13] new[33:47]
+DEBUG:parso.python.diff:-> code[equal] old[14:14] new[48:48]
+DEBUG:parso.python.diff:-> code[replace] old[15:23] new[49:50]
+DEBUG:parso.python.diff:diff parser end
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root:
+Implicit Euler Iteration: 4
+
+INFO:root:
+Implicit Euler Iteration: 5
+
+INFO:root:
+Implicit Euler Iteration: 6
+
+INFO:root:
+Implicit Euler Iteration: 7
+
+INFO:root:
+Implicit Euler Iteration: 8
+
+INFO:root:
+Implicit Euler Iteration: 9
+
+INFO:root:
+Implicit Euler Iteration: 10
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root:
+Implicit Euler Iteration: 4
+
+INFO:root:
+Implicit Euler Iteration: 5
+
+INFO:root:
+Implicit Euler Iteration: 6
+
+INFO:root:
+Implicit Euler Iteration: 7
+
+INFO:root:
+Implicit Euler Iteration: 8
+
+INFO:root:
+Implicit Euler Iteration: 9
+
+INFO:root:
+Implicit Euler Iteration: 10
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root:
+Implicit Euler Iteration: 4
+
+INFO:root:
+Implicit Euler Iteration: 5
+
+INFO:root:
+Implicit Euler Iteration: 6
+
+INFO:root:
+Implicit Euler Iteration: 7
+
+INFO:root:
+Implicit Euler Iteration: 8
+
+INFO:root:
+Implicit Euler Iteration: 9
+
+INFO:root:
+Implicit Euler Iteration: 10
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root:
+Implicit Euler Iteration: 4
+
+INFO:root:
+Implicit Euler Iteration: 5
+
+INFO:root:
+Implicit Euler Iteration: 6
+
+INFO:root:
+Implicit Euler Iteration: 7
+
+INFO:root:
+Implicit Euler Iteration: 8
+
+INFO:root:
+Implicit Euler Iteration: 9
+
+INFO:root:
+Implicit Euler Iteration: 10
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root:
+Implicit Euler Iteration: 4
+
+INFO:root:
+Implicit Euler Iteration: 5
+
+INFO:root:
+Implicit Euler Iteration: 6
+
+INFO:root:
+Implicit Euler Iteration: 7
+
+INFO:root:
+Implicit Euler Iteration: 8
+
+INFO:root:
+Implicit Euler Iteration: 9
+
+INFO:root:
+Implicit Euler Iteration: 10
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root:
+Implicit Euler Iteration: 4
+
+INFO:root:
+Implicit Euler Iteration: 5
+
+INFO:root:
+Implicit Euler Iteration: 6
+
+INFO:root:
+Implicit Euler Iteration: 7
+
+INFO:root:
+Implicit Euler Iteration: 8
+
+INFO:root:
+Implicit Euler Iteration: 9
+
+INFO:root:
+Implicit Euler Iteration: 10
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root:
+Implicit Euler Iteration: 4
+
+INFO:root:
+Implicit Euler Iteration: 5
+
+INFO:root:
+Implicit Euler Iteration: 6
+
+INFO:root:
+Implicit Euler Iteration: 7
+
+INFO:root:
+Implicit Euler Iteration: 8
+
+INFO:root:
+Implicit Euler Iteration: 9
+
+INFO:root:
+Implicit Euler Iteration: 10
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root:
+Implicit Euler Iteration: 4
+
+INFO:root:
+Implicit Euler Iteration: 5
+
+INFO:root:
+Implicit Euler Iteration: 6
+
+INFO:root:
+Implicit Euler Iteration: 7
+
+INFO:root:
+Implicit Euler Iteration: 8
+
+INFO:root:
+Implicit Euler Iteration: 9
+
+INFO:root:
+Implicit Euler Iteration: 10
+
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 50; new: 37
+DEBUG:parso.python.diff:-> code[equal] old[1:36] new[1:36]
+DEBUG:parso.python.diff:copy old[1:30] new[1:30]
+DEBUG:parso.python.diff:parse_part from 31 to 37 (to 36 in part parser)
+DEBUG:parso.python.diff:-> code[replace] old[37:50] new[37:37]
+DEBUG:parso.python.diff:diff parser end
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root:
+Implicit Euler Iteration: 4
+
+INFO:root:
+Implicit Euler Iteration: 5
+
+INFO:root:
+Implicit Euler Iteration: 6
+
+INFO:root:
+Implicit Euler Iteration: 7
+
+INFO:root:
+Implicit Euler Iteration: 8
+
+INFO:root:
+Implicit Euler Iteration: 9
+
+INFO:root:
+Implicit Euler Iteration: 10
+
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 37; new: 41
+DEBUG:parso.python.diff:-> code[equal] old[1:36] new[1:36]
+DEBUG:parso.python.diff:copy old[1:30] new[1:30]
+DEBUG:parso.python.diff:parse_part from 31 to 41 (to 40 in part parser)
+DEBUG:parso.python.diff:-> code[replace] old[37:37] new[37:41]
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 41; new: 41
+DEBUG:parso.python.diff:-> code[equal] old[1:40] new[1:40]
+DEBUG:parso.python.diff:copy old[1:30] new[1:30]
+DEBUG:parso.python.diff:parse_part from 31 to 41 (to 40 in part parser)
+DEBUG:parso.python.diff:-> code[replace] old[41:41] new[41:41]
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 41; new: 41
+DEBUG:parso.python.diff:-> code[equal] old[1:40] new[1:40]
+DEBUG:parso.python.diff:copy old[1:30] new[1:30]
+DEBUG:parso.python.diff:parse_part from 31 to 41 (to 40 in part parser)
+DEBUG:parso.python.diff:-> code[replace] old[41:41] new[41:41]
+DEBUG:parso.python.diff:diff parser end
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root:
+Implicit Euler Iteration: 4
+
+INFO:root:
+Implicit Euler Iteration: 5
+
+INFO:root:
+Implicit Euler Iteration: 6
+
+INFO:root:
+Implicit Euler Iteration: 7
+
+INFO:root:
+Implicit Euler Iteration: 8
+
+INFO:root:
+Implicit Euler Iteration: 9
+
+INFO:root:
+Implicit Euler Iteration: 10
+
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 41; new: 41
+DEBUG:parso.python.diff:-> code[equal] old[1:39] new[1:39]
+DEBUG:parso.python.diff:copy old[1:30] new[1:30]
+DEBUG:parso.python.diff:parse_part from 31 to 41 (to 40 in part parser)
+DEBUG:parso.python.diff:-> code[replace] old[40:41] new[40:41]
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 41; new: 41
+DEBUG:parso.python.diff:-> code[equal] old[1:40] new[1:40]
+DEBUG:parso.python.diff:copy old[1:30] new[1:30]
+DEBUG:parso.python.diff:parse_part from 31 to 41 (to 40 in part parser)
+DEBUG:parso.python.diff:-> code[replace] old[41:41] new[41:41]
+DEBUG:parso.python.diff:diff parser end
+DEBUG:parso.python.diff:diff parser start
+DEBUG:parso.python.diff:line_lengths old: 41; new: 41
+DEBUG:parso.python.diff:-> code[equal] old[1:40] new[1:40]
+DEBUG:parso.python.diff:copy old[1:30] new[1:30]
+DEBUG:parso.python.diff:parse_part from 31 to 41 (to 40 in part parser)
+DEBUG:parso.python.diff:-> code[replace] old[41:41] new[41:41]
+DEBUG:parso.python.diff:diff parser end
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root:
+Implicit Euler Iteration: 4
+
+INFO:root:
+Implicit Euler Iteration: 5
+
+INFO:root:
+Implicit Euler Iteration: 6
+
+INFO:root:
+Implicit Euler Iteration: 7
+
+INFO:root:
+Implicit Euler Iteration: 8
+
+INFO:root:
+Implicit Euler Iteration: 9
+
+INFO:root:
+Implicit Euler Iteration: 10
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root:
+Implicit Euler Iteration: 4
+
+INFO:root:
+Implicit Euler Iteration: 5
+
+INFO:root:
+Implicit Euler Iteration: 6
+
+INFO:root:
+Implicit Euler Iteration: 7
+
+INFO:root:
+Implicit Euler Iteration: 8
+
+INFO:root:
+Implicit Euler Iteration: 9
+
+INFO:root:
+Implicit Euler Iteration: 10
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+

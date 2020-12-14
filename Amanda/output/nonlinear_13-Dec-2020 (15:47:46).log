@@ -1,0 +1,113 @@
+INFO:root:
+TOL = 1e-08
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root: error 7.742147153589724e-08 in newton iteration 1
+INFO:root: error 7.742147154074576e-08 in newton iteration 2
+INFO:root: error 7.742147153824819e-08 in newton iteration 3
+INFO:root: error 7.7421471532129e-08 in newton iteration 4
+INFO:root: error 7.742144300731805e-08 in newton iteration 5
+INFO:root: error 7.742142413029166e-08 in newton iteration 6
+INFO:root: error 7.742142413158297e-08 in newton iteration 7
+INFO:root: error 7.742141001238313e-08 in newton iteration 8
+INFO:root:
+TOL = 1e-06
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root: error 7.742147154044903e-08 in newton iteration 1
+INFO:root:B(0.0): (2.044698411387754e-18, 1.7059551997013889e-18, -1.0185628939802125e-15)
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root:
+TOL = 1e-06
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root: error 4.9700807708168835e-08 in newton iteration 1
+INFO:root:B(0.0): (1.143129123311178e-14, -9.496245631685243e-15, -6.658865743459267e-14)
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root: error 4.970081084552036e-08 in newton iteration 1
+INFO:root:B(0.05): (-5.944568087518064e-22, 6.738763712483569e-22, 3.288356070318875e-21)
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root: error 4.970080506121332e-08 in newton iteration 1
+INFO:root:B(0.1): (1.143129009966094e-14, -9.496244525910761e-15, -6.658865097885929e-14)
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root: error 4.970081083711307e-08 in newton iteration 1
+INFO:root:B(0.15000000000000002): (-1.726277897074999e-21, 1.778357484616021e-21, 9.734443980549083e-21)
+INFO:root:
+Implicit Euler Iteration: 4
+
+INFO:root:
+TOL = 1e-06
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+TOL = 1e-06
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root:
+TOL = 1e-06
+MAX_IT = 30
+time values = [0.   0.05 0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root: error 4.970080542080009e-08 in newton iteration 1
+INFO:root:B(0.0): (1.1431290767182487e-16, -9.496245258290866e-17, -6.658865469663094e-16)
+INFO:root:
+Implicit Euler Iteration: 1
+
+INFO:root: error 4.970080559233144e-08 in newton iteration 1
+INFO:root:B(0.05): (-1.1316977894219479e-14, 9.401282835552698e-15, 6.592276835146574e-14)
+INFO:root:
+Implicit Euler Iteration: 2
+
+INFO:root: error 4.970081081039006e-08 in newton iteration 1
+INFO:root:B(0.1): (1.1431392672616476e-16, -9.496346274500088e-17, -6.658923345248115e-16)
+INFO:root:
+Implicit Euler Iteration: 3
+
+INFO:root: error 4.970080853711543e-08 in newton iteration 1
+INFO:root:B(0.15000000000000002): (1.0288263532696193e-16, -8.546721697884914e-17, -5.993036761152074e-16)
+INFO:root:
+Implicit Euler Iteration: 4
+

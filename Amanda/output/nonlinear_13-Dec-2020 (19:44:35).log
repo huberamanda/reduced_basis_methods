@@ -1,0 +1,16 @@
+INFO:root:
+TOL = 1e-06
+MAX_IT = 30
+time values = [0.1  0.15 0.2  0.25 0.3  0.35 0.4  0.45 0.5 ]
+eval point = (0.35000000000000003, 0, 0)
+angluar frequency = 188.49555921538757
+
+INFO:root:
+Implicit Euler Iteration: 0
+
+INFO:root: error 34861.71935238331 in newton iteration 1
+INFO:root: error 9159.352504705896 in newton iteration 2
+INFO:root: error 6416.070707562136 in newton iteration 3
+INFO:root: error 6416.070707252526 in newton iteration 4
+INFO:root: error 6416.070707665676 in newton iteration 5
+INFO:root: error 6416.070709281388 in newton iteration 6
