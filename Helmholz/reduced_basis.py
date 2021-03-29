@@ -1,7 +1,3 @@
-from __future__ import print_function
-from ipywidgets import interact, interactive, fixed, interact_manual
-import ipywidgets as widgets
-
 from ngsolve import *
 from netgen.geom2d import unit_square
 
@@ -12,13 +8,14 @@ import math
 import time
 
 from ngsolve.webgui import Draw
+# import netgen.gui
 
 np.random.seed(42)
 
 class ReducedBasis:
     
     def __init__(self, fes, blf, rhs, snap = None):
-
+        
         self.logging = True    
         
         self.fes = fes
@@ -94,12 +91,12 @@ class ReducedBasis:
             self.red = {} # dictionary of matrices in reduced space
             for key in self.bfs.keys():
                 mv[0:len(self.__snapshots)] = self.bfs[key].mat * self.V
-                self.red[key] = InnerProduct(self.V, mv)
+                self.red[key] = InnerProduct(self.V, mv, conjugate=False)
 
             # right hand side in reduced space
             mv = MultiVector(self.f.vec, 1)
             mv[0] = self.f.vec
-            self.f_red = InnerProduct(self.V, mv)
+            self.f_red = InnerProduct(self.V, mv, conjugate=False)
             
             
             if self.logging: print("finished computing Reduced Basis")
@@ -205,6 +202,8 @@ class ReducedBasis:
                     A += self.red[key]*omega**key
                 v = A.I * self.f_red
                 red_sol_vec = v[:,0]
+                # print("keys: ", [x for x in self.red.keys()])
+
             
                 if norm:
 
