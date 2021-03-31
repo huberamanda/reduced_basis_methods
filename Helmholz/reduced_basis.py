@@ -7,8 +7,10 @@ import scipy
 import math
 import time
 
-from ngsolve.webgui import Draw
-# import netgen.gui
+try:
+    from ngsolve.webgui import Draw
+except:
+    import netgen.gui
 
 np.random.seed(42)
 
@@ -53,7 +55,6 @@ class ReducedBasis:
         # compute norm of f
         self.__bv_tmp.data = self.proj*self.f.vec
         self.f.vec.data = self.__bv_tmp.data
-        self.__normf = Norm(self.__bv_tmp)**2
         
         self.__snapshots = []
         self.V = None
@@ -177,7 +178,7 @@ class ReducedBasis:
                     self.__res_mat['{}f'.format(names[i])][:] = 0
 
 
-    def computeValues(self, param, residual=True, norm=True, cheap = True):
+    def computeValues(self, param, residual=True, norm=True, cheap = False):
         
         if residual and norm: 
             if self.logging: print("compute residual and norm")
@@ -195,15 +196,12 @@ class ReducedBasis:
             for omega in param:
                 
                 # compute reduced solution
-                ## TODO: updatable a_red.inv (Base Matrix instead of bla-Matrix?) and omega as parameter
                 A = Matrix(len(self.__snapshots), len(self.__snapshots), self.fes.is_complex)
                 A[:] = 0
                 for key in self.red.keys():
                     A += self.red[key]*omega**key
                 v = A.I * self.f_red
                 red_sol_vec = v[:,0]
-                # print("keys: ", [x for x in self.red.keys()])
-
             
                 if norm:
 
@@ -219,13 +217,15 @@ class ReducedBasis:
                         if self.__update_res_mat:
                             self.__computeResMat()
                             
+                        # compute cheap residual for complex spaces 
+                        # ATTENTION: NOT WORKING!
                         if self.fes.is_complex:
                             A = (self.__res_mat['kk']
                                  + (self.__res_mat['kr']+self.__res_mat['kr'].H)*omega 
                                  + (self.__res_mat['km']+self.__res_mat['km'].H+self.__res_mat['rr'])*omega**2
                                  + (self.__res_mat['rm']+self.__res_mat['rm'].H)*omega**3
                                  + self.__res_mat['mm']*omega**4) 
-                        else:
+                        else: # compute cheap residual for real spaces
                             A = (self.__res_mat['kk']
                                  + self.__res_mat['km']*2*omega**2
                                  + self.__res_mat['mm']*omega**4 
@@ -234,9 +234,9 @@ class ReducedBasis:
        
                         A_F = self.__res_mat['kf']+self.__res_mat['mf']*omega**2+self.__res_mat['rf'] *omega
                             
-                        res = (InnerProduct(red_sol_vec, A * red_sol_vec) 
-                               - 2*np.real( InnerProduct(red_sol_vec, A_F, conjugate = False)) 
-                               + self.__normf)
+                        res = InnerProduct(red_sol_vec, A * red_sol_vec)  \
+                               - 2*np.real( InnerProduct(red_sol_vec, A_F, conjugate = False)) \
+                               + InnerProduct(self.f.vec, self.f.vec)
                         
                         residual_ret += [abs(res)]
 
