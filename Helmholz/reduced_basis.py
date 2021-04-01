@@ -35,6 +35,10 @@ class ReducedBasis:
         
         self.f = LinearForm(self.fes).Add(rhs).Assemble()
         
+        # set to zero at dirichlet boundaries
+        self.proj = Projector(self.fes.FreeDofs(), True)
+        self.proj.Project(self.f.vec)
+        
         # store ainv for better performance
         self.ainv = self.a.mat.Inverse(self.fes.FreeDofs(), inverse="sparsecholesky")
 
@@ -44,14 +48,9 @@ class ReducedBasis:
 
         # temporary ngsolve vectors
         self.__bv_tmp = self.bfs[[*self.bfs][0]].mat.CreateColVector()
-        self.__bv_tmp2 = self.bfs[[*self.bfs][0]].mat.CreateColVector()
         self.__gf_tmp = GridFunction(self.fes)
         
-        
-        # set to zero at dirichlet boundaries
-        self.proj = Projector(self.fes.FreeDofs(), True)
-        self.proj.Project(self.f.vec)
-        
+        # store snapshots and reduced basis space
         self.__snapshots = []
         self.V = None
 
@@ -111,8 +110,6 @@ class ReducedBasis:
     def draw(self, omega,minval = -0.0001,maxval = 0.0001, autoscale = True,redraw=False):
         
         # compute reduced solution
-
-        ## TODO: updatable a_red.inv (Base Matrix instead of bla-Matrix?) and omega as parameter
         A = Matrix(len(self.__snapshots), len(self.__snapshots), self.fes.is_complex)
         A[:] = 0
         for key in self.red.keys():
@@ -144,9 +141,7 @@ class ReducedBasis:
         with TaskManager():
             for i in self.bfs.keys():
                 # set multivectors
-                zeta[names[i]] = MultiVector(self.__bv_tmp, dim[0])
-                tmp.data = self.bfs[i].mat * self.V
-                zeta[names[i]].data = self.proj * tmp
+                zeta[names[i]] = self.proj.Project((self.bfs[i].mat*self.V).Evaluate())
                 # set keys
                 for k in range(i, 3):
                     if k in self.bfs.keys(): keys += [names[i]+names[k]]
@@ -187,6 +182,12 @@ class ReducedBasis:
         norm_ret = []
         residual_ret = []
         
+        # needed only in this jupyter notebook
+        if self.__update_res_mat:
+            self.__computeResMat()
+        self.__update_res_mat = False
+
+        
         with TaskManager():
 
             for omega in param:
@@ -210,9 +211,10 @@ class ReducedBasis:
                     
                     if cheap:
                         
-                        if self.__update_res_mat:
-                            self.__computeResMat()
+                        if self.__update_res_mat: self.__computeResMat()
                             
+                        A_F = self.__res_mat['kf']+self.__res_mat['mf']*omega**2+self.__res_mat['rf'] *omega
+                        
                         # compute cheap residual for complex spaces 
                         if self.fes.is_complex:
                             A = (self.__res_mat['kk']
@@ -226,12 +228,10 @@ class ReducedBasis:
                                  + self.__res_mat['mm']*omega**4 
                                  + self.__res_mat['kr']*2*omega
                                  + self.__res_mat['rm']*2*omega**3)
-       
-                        A_F = self.__res_mat['kf']+self.__res_mat['mf']*omega**2+self.__res_mat['rf'] *omega
                             
-                        res = InnerProduct(red_sol_vec, A * red_sol_vec)  \
-                               - 2*np.real( InnerProduct(red_sol_vec, A_F, conjugate = False)) \
-                               + InnerProduct(self.f.vec, self.f.vec)
+                        res = (InnerProduct(red_sol_vec, A * red_sol_vec) 
+                               - 2*np.real( InnerProduct(red_sol_vec, A_F, conjugate = False)) 
+                               + InnerProduct(self.f.vec, self.f.vec))
                         
                         residual_ret += [abs(res)]
 
@@ -240,10 +240,8 @@ class ReducedBasis:
                         if not norm: self.__gf_tmp.vec.data = self.V * red_sol_vec
                         self.omega.Set(omega)
                         self.a.Assemble()
-                        self.__bv_tmp.data = self.a.mat*self.__gf_tmp.vec - self.f.vec
-                        self.__bv_tmp2.data = self.proj*self.__bv_tmp
-                        res = Norm(self.__bv_tmp2)**2
-                    
+                        res = Norm(self.proj.Project((self.a.mat*self.__gf_tmp.vec - self.f.vec).Evaluate()))
+                        
                         residual_ret += [res]
                     
                     
@@ -251,4 +249,5 @@ class ReducedBasis:
         if norm and (not residual): return norm_ret
         if residual and (not norm): return residual_ret
         if norm and residual: return norm_ret, residual_ret
+    
     
