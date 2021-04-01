@@ -159,7 +159,7 @@ class ReducedBasis:
 
             # calculate scalar products
             for key in keys:
-                self.__res_mat[key] = InnerProduct (zeta[key[0]], zeta[key[1]])
+                self.__res_mat[key] = InnerProduct (zeta[key[0]], zeta[key[1]]).T
                 # calculate inner products with right hand side
                 if key[0] == key[1]:
                     self.__res_mat['{}f'.format(key[0])] = Vector(dim[0], self.fes.is_complex)
@@ -178,7 +178,7 @@ class ReducedBasis:
                     self.__res_mat['{}f'.format(names[i])][:] = 0
 
 
-    def computeValues(self, param, residual=True, norm=True, cheap = False):
+    def computeValues(self, param, residual=True, norm=True, cheap = True):
         
         if residual and norm: 
             if self.logging: print("compute residual and norm")
@@ -218,7 +218,6 @@ class ReducedBasis:
                             self.__computeResMat()
                             
                         # compute cheap residual for complex spaces 
-                        # ATTENTION: NOT WORKING!
                         if self.fes.is_complex:
                             A = (self.__res_mat['kk']
                                  + (self.__res_mat['kr']+self.__res_mat['kr'].H)*omega 
