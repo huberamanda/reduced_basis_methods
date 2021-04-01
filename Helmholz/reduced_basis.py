@@ -17,7 +17,7 @@ np.random.seed(42)
 class ReducedBasis:
     
     def __init__(self, fes, blf, rhs, snap = None):
-        
+
         self.logging = True    
         
         self.fes = fes
@@ -33,10 +33,8 @@ class ReducedBasis:
                 self.bfs[j] = BilinearForm(blf[j]).Assemble()
         self.a.Assemble()
         
-        self.f = LinearForm(self.fes)
-        self.f += rhs
-        self.f.Assemble()
-                
+        self.f = LinearForm(self.fes).Add(rhs).Assemble()
+        
         # store ainv for better performance
         self.ainv = self.a.mat.Inverse(self.fes.FreeDofs(), inverse="sparsecholesky")
 
@@ -50,18 +48,16 @@ class ReducedBasis:
         self.__gf_tmp = GridFunction(self.fes)
         
         
+        # set to zero at dirichlet boundaries
         self.proj = Projector(self.fes.FreeDofs(), True)
-
-        # compute norm of f
-        self.__bv_tmp.data = self.proj*self.f.vec
-        self.f.vec.data = self.__bv_tmp.data
+        self.proj.Project(self.f.vec)
         
         self.__snapshots = []
         self.V = None
 
         if snap is not None:
             self.addSnapshots(snap)
-            
+                    
 
     def addSnapshots(self, new_snapshots):
         
